@@ -1,0 +1,31 @@
+.card
+{
+	margin-top: 15px;
+}
+
+.card img:hover
+
+{
+	opacity: 0.7;
+	position: relative;
+
+}
+
+.card img
+ 
+{
+	position: relative;
+}
+.prix
+{
+		position: absolute;
+		
+		background-color: white;
+		margin-left: 10%;
+		opacity: 0.6;
+		
+		border-radius: 5px;
+		font-size: 25px;
+		z-index: 2;
+
+ }
