@@ -6,3 +6,16 @@
 .card-deck{
 	margin: 15px;
 }
+
+.card-img-top{
+	position: relative;
+}
+
+.card-body{
+	position: absolute;
+	background-color: white;
+}
+
+.card-text-img{
+	position: relative;
+}
