@@ -1,0 +1,109 @@
+
+.banniere {
+	position: relative;
+	overflow: hidden;
+}
+
+.banniere-caption {
+	position: absolute;
+	text-shadow: 1px 1px 1px black;
+	color: white;
+	left: 20px;
+	top:20px;
+}
+
+.img-fluid {
+	transition: transform .5s;
+}
+
+.prix {
+	transition: transform .2s;
+}
+
+.img-fluid:hover {
+	transform: scale(1.1);	
+}
+
+.card-body {
+		padding: 10px;
+	}
+
+.banniere-caption h5 {
+	font-size: 8vmin;
+
+}
+
+.banniere-caption p {
+	font-size: 3.5vmin;
+}
+
+.row {
+	margin: 15px 0;
+}
+
+.prix {
+	border-radius: 5px;
+	padding: 4px;
+	font-size: 1.5vh;
+	font-weight: 800;
+	position: absolute;
+	left: 0.5rem;
+	top: 0.5rem;
+	color : black;
+	background-color: rgba(255, 255, 255, 0.8);
+  }
+
+.card img:hover {
+  	opacity: 0.7;
+ 
+  }
+
+.card:hover .prix {
+	transform: translate(5px, 5px);
+}
+
+
+@media screen and (max-width: 812px) {
+	.card-title {
+	  font-size: 14px;
+	  margin: 1px;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+}
+
+
+@media screen and (max-width: 576px) {
+	.card-title {
+	  font-size: 16px;
+	  margin: 1px;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+	.prix {
+	font-size: 2vh;
+  }
+
+}
+
+@media screen and (max-width: 812px) {
+	.card-title {
+	  font-size: 12px;
+	  margin: 1px;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+	.prix {
+	font-size: 3vh;
+  }
+
+}
