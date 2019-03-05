@@ -63,18 +63,6 @@
 }
 
 
-@media screen and (max-width: 812px) {
-	.card-title {
-	  font-size: 14px;
-	  margin: 1px;
-	}
-
-	.card-body {
-		padding: 5px;
-	}
-
-}
-
 
 @media screen and (max-width: 576px) {
 	.card-title {
@@ -89,12 +77,27 @@
 	.prix {
 	font-size: 2vh;
   }
-
 }
 
-@media screen and (max-width: 812px) {
+
+@media screen and (max-width: 1024px) {
 	.card-title {
-	  font-size: 12px;
+	  font-size: 14px;
+	  margin: 1px;
+	}
+
+	.card-body {
+		padding: 2px;
+	}
+
+	.prix {
+	font-size: 2vh;
+  }
+}
+
+@media screen and (max-height: 415px) {
+	.card-title {
+	  font-size: 10px;
 	  margin: 1px;
 	}
 
@@ -103,7 +106,6 @@
 	}
 
 	.prix {
-	font-size: 3vh;
+	font-size: 2.5vh;
   }
-
 }
