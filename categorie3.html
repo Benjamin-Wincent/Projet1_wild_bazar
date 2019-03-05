@@ -12,37 +12,37 @@
 	<body>
 		
 					<header>
-							<nav class="navbar navbar-light bg-light navbar-expand-xxl">
-							  <a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WILD BAZAR</a>
-							  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<nav class="navbar navbar-light bg-light navbar-expand-xxl">
+							<a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WILD BAZAR</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								<span class="navbar-toggler-icon"></span>
-							  </button>
-							  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
 								<ul class="navbar-nav mr-auto">
-								  <li class="nav-item">
-									<a class="nav-link" href="#">SUV</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">Cabriolets</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">Monospaces</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">Berlines</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#">Motos</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#aboutus">About us</a>
-								  </li>
-								  <li class="nav-item">
-									<a class="nav-link" href="#contactus">Contact us</a>
-								  </li>
+									<li class="nav-item">
+										<a class="nav-link" href="#categorie1.html">SUV</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#categorie2.html">Cabriolets</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#categorie3.html">Monospaces</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#categorie4.html">Berlines</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#categorie5.html">Motos</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#aboutus">About us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contactus">Contact us</a>
+									</li>
 								</ul>
-							  </div>
-							</nav>
+							</div>
+						</nav>
 							<div class="banniere d-flex justify-content-start align-items-start">
 								<img src="Medias/Images/peugeot-5008.jpg" class="img-fluid" alt="Responsive image">
 								<div class="banniere-caption text-left">
@@ -78,7 +78,27 @@
 												</div>
 											</div>
 											<div class="card text-center">
-												<img src="Medias/Images/toyota_verso.jpg" class="card-img-top" alt="Toyota Verso">
+												<a href="#Toyota_verso" role="button" data-toggle="modal">
+													<img src="Medias/Images/toyota_verso.jpg" class="card-img-top" alt="Toyota Verso"></a>
+													<!-- Modal -->
+													<div class="modal fade" id="Toyota_verso" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+														<div class="modal-dialog" role="document">
+															<div class="modal-content">
+																<div class="modal-header">
+																	<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+																	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	</button>
+																</div>
+																<div class="modal-body">
+																	Caractéristique
+																</div>
+																<div class="modal-footer">
+																	<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																</div>
+															</div>
+														</div>
+													</div>
 												<p class="prix">
 													64 000 €
 												</p>
@@ -234,45 +254,46 @@
 									</div>
 								</div>
 							</section>
-						<footer>
+							<hr>
+							<footer>
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-sm col-md col-lg">
-										  <div class="container">
-											  <div class="row d-flex flex-row">
-												  <div class="col-sm col-md col-lg">
-													  <ul class="list-unstyled">
-														  <li class="nav-link" href="#">Home</li>
-														  <li class="nav-link" href="#aboutus">About us</li>
-														  <li class="nav-link" href="#topselling">Top Selling</li>
-														  <li class="nav-link" href="#contactus">Contact</li>
-														  <li class="nav-link" href="#">Legal mentions</li>
+										<div class="container">
+											<div class="row d-flex flex-row">
+												<div class="col-sm col-md col-lg">
+													<ul class="list-unstyled">
+														<li><a class="nav-link foot" href="#">Home</a></li>
+														<li><a class="nav-link foot" href="#aboutus">About us</a></li>
+														<li><a class="nav-link foot" href="#topselling">Top Selling</a></li>
+														<li><a class="nav-link foot" href="#contactus">Contact</a></li>
+														<li><a class="nav-link foot" href="#legalmentions">Legal mentions</a></li>
 														</ul>
 													</div>
 													<div class="col-sm col-md col-lg">
 														<ul class="list-unstyled">
-															<li class="nav-link" href="#">SUV</li>
-															<li class="nav-link" href="#">Cabriolet</li>
-															<li class="nav-link" href="#">Monospace</li>
-															<li class="nav-link" href="#">Berline</li>
-															<li class="nav-link" href="#">Moto</li>
+															<li><a class="nav-link foot" href="#categorie1.html">SUV</a></li>
+															<li><a class="nav-link foot" href="#categorie2.html">Cabriolets</a></li>
+															<li><a class="nav-link foot" href="#categorie3.html">Monospaces</a></li>
+															<li><a class="nav-link foot" href="#categorie4.html">Berlines</a></li>
+															<li><a class="nav-link foot" href="#categorie5.html">Motos</a></li>
 														</ul>
 													</div>
 												</div>
 												<div class="row">
 													<div class="col-sm col-md col-lg-2">
-													  <img src="medias/images/Logo.png">
-												  </div>
-												  <div class="col-sm col-md col-lg-6">
-													  <h1>WILD BAZAR</h1>
-												  </div>
+													<img src="medias/images/Logo.png">
+												</div>
+												<div class="col-sm col-md col-lg-6">
+													<h1>WILD BAZAR</h1>
+												</div>
 												</div>
 												<div class="row">
-													<div class="col-sm offset-md-6 offset-lg-2">
+													<div class="col-sm offset-md-6 offset-lg-3">
 														<ul class="list-unstyled">
-														  <li>1, rue de la paix</li>
-														  <li>75000 Paris</li>
-														  <li>01-23-45-67-89</li>
+														<li>1, rue de la paix</li>
+														<li>75000 Paris</li>
+														<li>01-23-45-67-89</li>
 														</ul>
 													</div>
 												</div>
@@ -284,15 +305,17 @@
 												<form>
 													<div class="form-group">
 														<label for="exampleFormControlInput1">Email</label>
-													  <input type="email" class="form-control" id="exampleFormControlInput1">
+														<input type="email" class="form-control" id="exampleFormControlInput1">
 													</div>
 													<div class="form-group">
-													  <label for="exampleFormControlTextarea1">Message</label>
-													  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+														<label for="exampleFormControlTextarea1">Message</label>
+														<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 													</div>
-									<div class="text-center">
-													<button type="button" class="btn btn-outline-primary">SUBMIT</button>
-									</div>
+													<div class="row">
+													<div class="col-sm col-md col-lg">
+														<button class="btn btn-outline-primary btn-block">SUBMIT</button>
+													</div>
+													</div>
 												</form>
 											</div>
 										</div>
