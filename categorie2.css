@@ -1,33 +1,22 @@
-
-body {
-	background-color: #33383b;
-}
-
-
-
 .row {
 	margin: 40px 0;
 }
 
-.bg-dark {
-	background-color: #292c2f!important;
-}
-
-.navbar-dark .navbar-brand {
-	color: #92999f;
+.navbar-light .navbar-brand {
+	color: black;
 	font-size: 30px;
 }
 
-.navbar-dark .navbar-brand:hover {
+.navbar-light .navbar-brand:hover {
 	color: #ED3759;
 	font-size: 30px;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-	color: white;
+.navbar-light .navbar-nav .nav-link {
+	color: #33383b;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover{
 	color: #ED3759;
 }
 
@@ -40,11 +29,12 @@ body {
 
 .banniere-caption {
 	position: absolute;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 2px 2px 5px black;
 	color: white;
 	left: 30px;
 	top: 20px;
-	color :#33383b;
+	color :white;
+	opacity: 0.7;
 }
 
 .banniere-caption h5 {
