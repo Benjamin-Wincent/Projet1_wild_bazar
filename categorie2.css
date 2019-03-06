@@ -1,4 +1,38 @@
 
+body {
+	background-color: #33383b;
+}
+
+
+
+.row {
+	margin: 40px 0;
+}
+
+.bg-dark {
+	background-color: #292c2f!important;
+}
+
+.navbar-dark .navbar-brand {
+	color: #92999f;
+	font-size: 30px;
+}
+
+.navbar-dark .navbar-brand:hover {
+	color: #ED3759;
+	font-size: 30px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #ED3759;
+}
+
+/* Design de la photo de couverture et du texte par dessus */
+
 .banniere {
 	position: relative;
 	overflow: hidden;
@@ -6,40 +40,47 @@
 
 .banniere-caption {
 	position: absolute;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 1px 1px 1px white;
 	color: white;
-	left: 20px;
-	top:20px;
+	left: 30px;
+	top: 20px;
+	color :#33383b;
 }
+
+.banniere-caption h5 {
+	font-size: 7vmax;
+	margin: 0;
+}
+
+.banniere-caption p {
+	font-size: 3vmax;
+	margin: 0;
+}
+
+/* Proprités pour l'animation de la photo en couverture */
 
 .img-fluid {
 	transition: transform .5s;
-}
-
-.prix {
-	transition: transform .2s;
 }
 
 .img-fluid:hover {
 	transform: scale(1.1);	
 }
 
+/* Design et animation des card */
+
 .card-body {
-		padding: 10px;
-	}
+	padding: 10px;
+	color: #c5c5c5;
+	background-color: #33383b ;
+}
 
-.banniere-caption h5 {
-	font-size: 8vmin;
+.card img:hover {
+	opacity: 0.7;
 
 }
 
-.banniere-caption p {
-	font-size: 3.5vmin;
-}
-
-.row {
-	margin: 15px 0;
-}
+/* Placement et design de l'étiquette prix */
 
 .prix {
 	border-radius: 5px;
@@ -51,49 +92,50 @@
 	top: 0.5rem;
 	color : black;
 	background-color: rgba(255, 255, 255, 0.8);
-  }
-
-.card img:hover {
-  	opacity: 0.7;
- 
-  }
+	transition: transform .2s;
+}
 
 .card:hover .prix {
 	transform: translate(5px, 5px);
 }
 
+/* Adaptation de l'étiquette de prix et des card, 
+taille et police en fonction du support (tablette, smartphone, ...) */
 
 @media screen and (max-width: 1024px) {
 	.card-title {
-	  font-size: 14px;
-	  margin: 1px;
+		font-size: 14px;
+		margin: 1px;
 	}
 
 	.card-body {
 		padding: 2px;
 	}
+
 }
 
 
 @media screen and (max-width: 815px) {
 	.card-title {
-	  font-size: 12px;
-	  margin: 1px;
+		font-size: 12px;
+		margin: 1px;
 	}
 
 	.card-body {
 		padding: 2px;
 	}
+
 	.prix {
-	font-size: 0.7em;
-  }
+		font-size: 0.7em;
+	}
+
 }
 
 
 @media screen and (max-width: 576px) {
 	.card-title {
-	  font-size: 16px;
-	  margin: 1px;
+		font-size: 16px;
+		margin: 1px;
 	}
 
 	.card-body {
@@ -101,6 +143,191 @@
 	}
 
 	.prix {
-	font-size: 0.9em;
-  }
+		font-size: 0.9em;
+	}
+
+	.banniere-caption h5 {
+	font-size: 7vmin;
+
+}
+
+	.banniere-caption p {
+		font-size: 3vmin;
+	}
+}
+
+/* CSS du footer */
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: white;
+}
+
+.footer-distributed .footer-links a:hover{
+	color: #ED3759;
+}
+
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ED3759;;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
 }
