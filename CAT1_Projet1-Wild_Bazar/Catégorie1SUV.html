@@ -16,7 +16,7 @@
 <header>
 
         <nav class="navbar navbar-light bg-light navbar-expand-xxl">
-          <a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WILD BAZAR</a>
+          <a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WildCars</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,8 +45,7 @@
               </li>
             </ul>
           </div>
-        </nav>
-
+</nav>
 </header>
 
 <!-- Banner -->
@@ -65,787 +64,932 @@
 
 </header>
 
-		<section class="product-list">
 
-			<!--première ligne de produit -->
+<!--Icone barre -->
 
-			<div class="container-fluid">
+
+	<section class="product-list">
+		<div class="container-fluid">
+			<div class="container">
 				<div class="row d-flex justify-content-center align-items-center">
-					<div class="card-deck col-sm-12">
+					<div class="h1 icon-title">Find all our SUV here !</div>
+				</div>
+				<div class="row icon">
+					<div class="col-12 col-md-4 text-center">
+						<img src="medias/images/icon_garage.png" class="img-fluid" alt="Responsive image"
+							style="width:100px;height:100px;">
+						<div class="h5">Explore our vehicles park</div>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img src="medias/images/icon_search.png" class="img-fluid" alt="Responsive image"
+							style="width:100px;height:100px;">
+						<div class="h5">Select your model</div>
+					</div>
+					<div class="col-12 col-md-4 text-center">
+						<img src="medias/images/icon_pay.png" class="img-fluid" alt="Responsive image"
+							style="width:100px;height:100px;">
+						<div class="h5">Make your order</div>
+					</div>
+				</div>
+			</div>
 
-						<!-- Voiture 1 -->
+			<!--Barre de recherche -->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLAAMG1.jpg" data-toggle="modal" data-target="#exampleModalLong" class="card-img-top" alt="voiture_1">
-
-                             <!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLA AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLAAMG1.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+			<section class="search-sec">
+				<div class="container-fluid">
+					<form action="#" method="post" novalidate="novalidate">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+										<select class="form-control search-slt" id="exampleFormControlSelect1">
+											<option>Select Energy</option>
+											<option>Gazole</option>
+											<option>Gasoline</option>
+											<option>Hybrid</option>
+										</select>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+										<select class="form-control search-slt" id="exampleFormControlSelect1">
+											<option>Select Price</option>
+											<option>0 to 5 000 €</option>
+											<option>5 001 to 10 000 €</option>
+											<option>10 001 to 20 000 €</option>
+											<option>20 001 to 50 000 €</option>
+											<option>> 50 001 €</option>
+										</select>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+										<select class="form-control search-slt" id="exampleFormControlSelect1">
+											<option>Select Color</option>
+											<option>Black</option>
+											<option>White</option>
+											<option>Red</option>
+											<option>Green</option>
+											<option>Blue</option>
+											<option>Gray</option>
+										</select>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+										<button type="button" class="btn btn-primary wrn-btn">Search</button>
+									</div>
+								</div>
 							</div>
+						</div>
+					</form>
+				</div>
+			</section>
 
 
-							<p class="prix">
-								43 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										GLA AMG
-									</h5>
+
+	<!-- PRODUITS -->
+
+		<!--première ligne de produit -->
+
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="card-deck col-sm-12">
+
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+
+					<div class="card text-center shadow mb-5 bg-white rounded">
+						<img src="medias/images/GLAAMG1.jpg" data-toggle="modal" data-target="#Toyota_verso"
+							class="card-img-top" alt="voiture_1">
+						<div class="modal fade" id="Toyota_verso" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+											Mercedes Benz - GLA AMG caracteristics
+										</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									</div>
+									<div class="modal-body">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-sm-12 col-md-6">
+													<img src="medias/images/GLAAMG1.jpg" data-toggle="modal"
+														data-target="#Toyota_verso" class="card-img-top"
+														alt="voiture_1">
+												</div>
+												<div class="col-sm-12 col-md-6">
+													<ul class="list-group list-group-flush">
+														<li class="list-group-item">Energy: Gazole</li>
+														<li class="list-group-item">HP: 112 / 82 kW
+														</li>
+														<li class="list-group-item">Tax rating: 6</li>
+														<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+														</li>
+														<li class="list-group-item">Transmission: Manual</li>
+														<li class="list-group-item">Price: 20 000 €</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary addcart"
+											data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+											data-dismiss="modal">Close</button>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 2 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA2.jpg" data-toggle="modal" data-target="#exampleModalLong1" class="card-img-top" alt="voiture_2">
-
-							 <!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLA</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA2.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+						<p class="prix">
+							64 000 €
+						</p>
+						<div class="card-body">
+							<div class="card-body">
+								<h5 class="card-title">
+									Mercedes Benz - GLA AMG caracteristics
+								</h5>
 							</div>
+						</div>
+					</div>
 
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLCAMG1.jpg" data-toggle="modal" data-target="#GLCAMG1"
+								class="card-img-top" alt="GLCAMG1">
+							<div class="modal fade" id="GLCAMG1" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLC AMG
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLCAMG1.jpg" data-toggle="modal"
+															data-target="#GLCAMG1" class="card-img-top"
+															alt="GLCAMG1">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+	
 							<p class="prix">
 								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLA - Neuf tout équipé
+										Mercedes Benz - GLC AMG
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 3 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA4.jpg" data-toggle="modal" data-target="#exampleModalLong2" class="card-img-top" alt="voiture_3">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLA Neuf Entrée de gamme</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA4.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLECOUPEAMG3.jpg" data-toggle="modal" data-target="#GLECOUPEAMG3"
+								class="card-img-top" alt="GLECOUPEAMG3">
+							<div class="modal fade" id="GLECOUPEAMG3" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLE COUPE AMG
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLECOUPEAMG3.jpg" data-toggle="modal"
+															data-target="#GLECOUPEAMG3" class="card-img-top"
+															alt="GLECOUPEAMG3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
 							</div>
-
+	
 							<p class="prix">
-								45 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLA - Neuf Entrée de gamme
+										Mercedes Benz - GLE COUPE AMG
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 4 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA3.jpg" data-toggle="modal" data-target="#exampleModalLong3" class="card-img-top" alt="voiture_4">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLA Neuf Entrée de gamme</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLA3.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLA2.jpg" data-toggle="modal" data-target="#GLA2"
+								class="card-img-top" alt="GLA2">
+							<div class="modal fade" id="GLA2" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLA
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLA2.jpg" data-toggle="modal"
+															data-target="#GLA2" class="card-img-top"
+															alt="GLA2">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
 							</div>
-
+	
 							<p class="prix">
-								75 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLA - Occasion
+										Mercedes Benz - GLA 
 									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+					
 
-				<!--deuxième ligne de produit -->
+<!--Deuxième ligne de produit -->
 
-				<div class="row d-flex justify-content-center">
-					<div class="card-deck col-sm-12">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="card-deck col-sm-12">
 
-						<!-- Voiture 5 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCAMG1.jpg" data-toggle="modal" data-target="#exampleModalLong4" class="card-img-top" alt="voiture_1">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLC AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCAMG1.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+						<img src="medias/images/GLCCOUPE4.jpg" data-toggle="modal" data-target="#GLCCOUPE4"
+							class="card-img-top" alt="GLCCOUPE4">
+						<div class="modal fade" id="GLCCOUPE4" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+											Mercedes Benz - GLC COUPE 
+										</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									</div>
+									<div class="modal-body">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-sm-12 col-md-6">
+													<img src="medias/images/GLCCOUPE4.jpg" data-toggle="modal"
+														data-target="#GLCCOUPE4" class="card-img-top"
+														alt="GLCCOUPE4">
+												</div>
+												<div class="col-sm-12 col-md-6">
+													<ul class="list-group list-group-flush">
+														<li class="list-group-item">Energy: Gazole</li>
+														<li class="list-group-item">HP: 112 / 82 kW
+														</li>
+														<li class="list-group-item">Tax rating: 6</li>
+														<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+														</li>
+														<li class="list-group-item">Transmission: Manual</li>
+														<li class="list-group-item">Price: 20 000 €</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary addcart"
+											data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+											data-dismiss="modal">Close</button>
+									</div>
+								</div>
 							</div>
+						</div>
 
+						<p class="prix">
+							64 000 €
+						</p>
+						<div class="card-body">
+							<div class="card-body">
+								<h5 class="card-title">
+									Mercedes Benz - GLC COUPE
+								</h5>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLSAMG1.jpg" data-toggle="modal" data-target="#GLSAMG1"
+								class="card-img-top" alt="GLSAMG1">
+							<div class="modal fade" id="GLSAMG1" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLS AMG
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLSAMG1.jpg" data-toggle="modal"
+															data-target="#GLSAMG1" class="card-img-top"
+															alt="GLSAMG1">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+	
 							<p class="prix">
-								15 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLC AMG
+										Mercedes Benz - GLS AMG
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 5 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLC2.jpg" data-toggle="modal" data-target="#exampleModalLong5" class="card-img-top" alt="voiture_2">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLC</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLC2.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLE2.jpg" data-toggle="modal" data-target="#GLE2"
+								class="card-img-top" alt="GLE2">
+							<div class="modal fade" id="GLE2" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLE 
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLE2.jpg" data-toggle="modal"
+															data-target="#GLE2" class="card-img-top"
+															alt="GLE2">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
 							</div>
-
+	
 							<p class="prix">
-								20 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLC
+										Mercedes Benz - GLE
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 6 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCAMGCOUPE3.jpg" data-toggle="modal" data-target="#exampleModalLong6" class="card-img-top" alt="voiture_3">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLC COUPE AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCAMGCOUPE3.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								8 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										GLC - COUPE AMG
-									</h5>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLC2.jpg" data-toggle="modal" data-target="#GLC2GLA4ClasseG4GLEAMG1ClasseGAMG3"
+								class="card-img-top" alt="GLC2GLA4ClasseG4GLEAMG1ClasseGAMG3">
+							<div class="modal fade" id="GLC2GLA4ClasseG4GLEAMG1ClasseGAMG3" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLC
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLC2.jpg" data-toggle="modal"
+															data-target="#GLC2GLA4ClasseG4GLEAMG1ClasseGAMG3" class="card-img-top"
+															alt="GLC2GLA4ClasseG4GLEAMG1ClasseGAMG3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-
-						<!-- Voiture 6 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCCOUPE4.jpg" data-toggle="modal" data-target="#exampleModalLong7" class="card-img-top" alt="voiture_4">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLC COUPE</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLCCOUPE4.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
+	
 							<p class="prix">
-								10 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLC COUPE
+										Mercedes Benz - GLC 
 									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 
-				<!--troisième ligne de produit -->
+<!--Troisième ligne de produit -->
 
-				<div class="row d-flex justify-content-center">
-					<div class="card-deck col-sm-12">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="card-deck col-sm-12">
 
-						<!-- Voiture 7 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLEAMG1.jpg" data-toggle="modal" data-target="#exampleModalLong8" class="card-img-top" alt="voiture_1">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLE AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLEAMG1.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+						<img src="medias/images/GLA4.jpg" data-toggle="modal" data-target="#GLA4ClasseG4GLEAMG1ClasseGAMG3"
+							class="card-img-top" alt="GLA4ClasseG4GLEAMG1ClasseGAMG3">
+						<div class="modal fade" id="GLA4ClasseG4GLEAMG1ClasseGAMG3" tabindex="-1" role="dialog"
+							aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+											Mercedes Benz - GLA
+										</h5>
+										<button type="button" class="close" data-dismiss="modal"
+											aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									</div>
+									<div class="modal-body">
+										<div class="container-fluid">
+											<div class="row">
+												<div class="col-sm-12 col-md-6">
+													<img src="medias/images/GLA4.jpg" data-toggle="modal"
+														data-target="#GLA4ClasseG4GLEAMG1ClasseGAMG3" class="card-img-top"
+														alt="GLA4ClasseG4GLEAMG1ClasseGAMG3">
+												</div>
+												<div class="col-sm-12 col-md-6">
+													<ul class="list-group list-group-flush">
+														<li class="list-group-item">Energy: Gazole</li>
+														<li class="list-group-item">HP: 112 / 82 kW
+														</li>
+														<li class="list-group-item">Tax rating: 6</li>
+														<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+														</li>
+														<li class="list-group-item">Transmission: Manual</li>
+														<li class="list-group-item">Price: 20 000 €</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary addcart"
+											data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+											data-dismiss="modal">Close</button>
+									</div>
+								</div>
 							</div>
+						</div>
 
+						<p class="prix">
+							64 000 €
+						</p>
+						<div class="card-body">
+							<div class="card-body">
+								<h5 class="card-title">
+									Mercedes Benz - GLA
+								</h5>
+							</div>
+						</div>
+					</div>
+
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/ClasseG4.jpg" data-toggle="modal" data-target="#ClasseG4GLEAMG1ClasseGAMG3"
+								class="card-img-top" alt="ClasseG4GLEAMG1ClasseGAMG3">
+							<div class="modal fade" id="ClasseG4GLEAMG1ClasseGAMG3" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - Classe G
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/ClasseG4.jpg" data-toggle="modal"
+															data-target="#ClasseG4GLEAMG1ClasseGAMG3" class="card-img-top"
+															alt="ClasseG4GLEAMG1ClasseGAMG3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+	
 							<p class="prix">
-								166 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLE AMG
+										Mercedes Benz - Classe G
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 8 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLE2.jpg" data-toggle="modal" data-target="#exampleModalLong9" class="card-img-top" alt="voiture_2">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLE</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLE2.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/GLEAMG1.jpg" data-toggle="modal" data-target="#GLEAMG1ClasseGAMG3"
+								class="card-img-top" alt="GLEAMG1ClasseGAMG3">
+							<div class="modal fade" id="GLEAMG1ClasseGAMG3" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - GLE AMG
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/GLEAMG1.jpg" data-toggle="modal"
+															data-target="#GLEAMG1ClasseGAMG3" class="card-img-top"
+															alt="GLEAMG1ClasseGAMG3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
 							</div>
-
+	
 							<p class="prix">
-								95 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLE
+										Mercedes Benz - GLE AMG
 									</h5>
 								</div>
 							</div>
 						</div>
 
-						<!-- Voiture 9 -->
+					<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
 
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLECOUPEAMG3.jpg" data-toggle="modal" data-target="#exampleModalLong10" class="card-img-top" alt="voiture_3">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLE COUPE AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLECOUPEAMG3.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								138 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										GLE - COUPE AMG
-									</h5>
+					<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/ClasseGAMG3.jpg" data-toggle="modal" data-target="#ClasseGAMG3"
+								class="card-img-top" alt="ClasseGAMG3">
+							<div class="modal fade" id="ClasseGAMG3" tabindex="-1" role="dialog"
+								aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes Benz - Classe G AMG
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"
+												aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/ClasseGAMG3.jpg" data-toggle="modal"
+															data-target="#ClasseGAMG3" class="card-img-top"
+															alt="ClasseGAMG3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 112 / 82 kW
+															</li>
+															<li class="list-group-item">Tax rating: 6</li>
+															<li class="list-group-item">Fuel consumption combined: 61.5 mpg
+															</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 20 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"
+												data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"
+												data-dismiss="modal">Close</button>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-
-						<!-- Voiture 10 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLECOUPE4.jpg" data-toggle="modal" data-target="#exampleModalLong11" class="card-img-top" alt="voiture_4">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLE COUPE </h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLECOUPE4.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
+	
 							<p class="prix">
-								38 000 €
+								64 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										GLE COUPE
+										Mercedes Benz - Classe G AMG
 									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<!--quatrième ligne de produit -->
-
-				<div class="row d-flex justify-content-center">
-					<div class="card-deck col-sm-12">
-
-						<!-- Voiture 11 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLSAMG1.jpg" data-toggle="modal" data-target="#exampleModalLong12" class="card-img-top" alt="voiture_1">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLS AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLSAMG1.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								166 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										GLS AMG
-									</h5>
-								</div>
-							</div>
-						</div>
-
-						<!-- Voiture 12 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLS2.jpg" data-toggle="modal" data-target="#exampleModalLong13" class="card-img-top" alt="voiture_2">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - GLS</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/GLS2.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								95 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										GLS
-									</h5>
-								</div>
-							</div>
-						</div>
-
-						<!-- Voiture 13 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/ClasseGAMG3.jpg" data-toggle="modal" data-target="#exampleModalLong14" class="card-img-top" alt="voiture_3">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - Classe G AMG</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/ClasseGAMG3.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								138 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										Classe G AMG
-									</h5>
-								</div>
-							</div>
-						</div>
-
-						<!-- Voiture 14 -->
-
-						<div class="card text-center">
-							<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/ClasseG4.jpg" data-toggle="modal" data-target="#exampleModalLong15" class="card-img-top" alt="voiture_4">
-
-							<!-- Modal -->
-
-							<div class="modal fade" id="exampleModalLong15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  								<div class="modal-dialog" role="document">
-    								<div class="modal-content">
-     									<div class="modal-header">
-        									<h5 class="modal-title" id="exampleModalLongTitle">Mercedes Benz - Classe G</h5>
-        									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          									<span aria-hidden="true">&times;</span>
-        									</button>
-      									</div>
-
-      									<div class="modal-body">
-      							    	<img src="/Users/benjaminprades/Desktop/WILD_CODE_SCHOOL/GitHUB/Projet1_wild_bazar/CAT1_Projet1-Wild_Bazar/medias/images/ClasseG4.jpg"  class="card-img-top" alt="voiture_1">
-        								<p>Texte Modal</p>
-      									</div>
-
-
-      								<div class="modal-footer">
-        							<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      								</div>
-    								</div>
- 								 </div>
-							</div>
-
-							<p class="prix">
-								38 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										Classe G
-									</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
 
 
 <!-- Footer -->
 
-<footer>
-  			<div class="container-fluid">
-  				<div class="row">
-  					<div class="col-sm col-md col-lg">
-						<div class="container">
-							<div class="row d-flex flex-row">
-								<div class="col-sm col-md col-lg">
-									<ul class="list-unstyled">
-										<li class="nav-link" href="#">Home</li>
-										<li class="nav-link" href="#aboutus">About us</li>
-										<li class="nav-link" href="#topselling">Top Selling</li>
-										<li class="nav-link" href="#contactus">Contact</li>
-										<li class="nav-link" href="#">Legal mentions</li>
-  									</ul>
-  								</div>
-  								<div class="col-sm col-md col-lg">
-  									<ul class="list-unstyled">
-										  <li class="nav-link" href="#">SUV</li>
-										  <li class="nav-link" href="#">Cabriolet</li>
-										  <li class="nav-link" href="#">Monospace</li>
-										  <li class="nav-link" href="#">Berline</li>
-										  <li class="nav-link" href="#">Moto</li>
-  									</ul>
-  								</div>
-  							</div>
-  							<div class="row">
-  								<div class="col-sm col-md col-lg-2">
-									<img src="medias/images/Logo.png">
-								</div>
-								<div class="col-sm col-md col-lg-6">
-									<h1>WILD BAZAR</h1>
-								</div>
-  							</div>
-  							<div class="row">
-  								<div class="col-sm offset-md-6 offset-lg-2">
-  									<ul class="list-unstyled">
-										<li>1, rue de la paix</li>
-										<li>75000 Paris</li>
-										<li>01-23-45-67-89</li>
-  									</ul>
-  								</div>
-  							</div>
-  						</div>
-  					</div>
-  					<div class="col-sm col-md col-lg">
-  						<div class="container">
-  							<h1 id="contactus">Contact us</h1>
-  							<form>
-  								<div class="form-group">
-  									<label for="exampleFormControlInput1">Email</label>
-    								<input type="email" class="form-control" id="exampleFormControlInput1">
-  								</div>
-  								<div class="form-group">
-    								<label for="exampleFormControlTextarea1">Message</label>
-    								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  								</div>
-                  <div class="text-center">
-  								<button type="button" class="btn btn-outline-primary">SUBMIT</button>
-                  </div>
-  							</form>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
-  		</footer>
+	<footer class="footer-distributed">
+		<div class="footer-left">
+			<h3>
+				<span><img src="medias/images/Logo.png"></span>
+				WildCars
+			</h3>
+			<p class="footer-links">
+				<a href="#">Home</a>
+				·
+				<a href="categorie1.html">SUV</a>
+				·
+				<a href="categorie2.html">Convertibles</a>
+				·
+				<a href="categorie3.html">Minivans</a>
+				·
+				<a href="categorie4.html">Sedans</a>
+				·
+				<a href="categorie5.html">Motorcycles</a>
+				·
+				<a href="#aboutus">About us</a>
+			</p>
+			<button type="button" class="btn btn-primary contactus" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact us</button>
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					  <div class="modal-content">
+						<div class="modal-header">
+						  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+						  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						  </button>
+						</div>
+						<div class="modal-body">
+						  <form>
+							<div class="form-group">
+							  <label for="recipient-name" class="col-form-label">Recipient:</label>
+							  <input placeholder="@" type="text" class="form-control" id="recipient-name">
+							</div>
+							<div class="form-group">
+							  <label for="message-text" class="col-form-label">Message:</label>
+							  <textarea class="form-control" id="message-text"></textarea>
+							</div>
+						  </form>
+						</div>
+						<div class="modal-footer">
+						  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						  <button type="button" class="btn btn-primary">Send message</button>
+						</div>
+					  </div>
+					</div>
+				  </div>
+		</div>
+		<div class="footer-center">
+			<div>
+				<i class="fa fa-map-marker"></i>
+				<p>
+					<span>17 rue Delandine</span>
+					Lyon, France
+				</p>
+			</div>
+			<div>
+				<i class="fa fa-phone"></i>
+				<p>
+					06 58 46 83 32
+				</p>
+			</div>
+			<div>
+				<i class="fa fa-envelope"></i>
+				<p>
+					<a href="mailto:support@company.com">contact@wildcars.com</a>
+				</p>
+			</div>
+		</div>
+		<div class="footer-right">
+			<p class="footer-company-about">
+				<span>About the company</span>
+				We sell top quality vehicles and some unique models with 5 years guarantee. Our team are passionate and
+				professionnal and our prices are the best on the market.
+			</p>
+		</div>
+	</footer>
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
 </html>

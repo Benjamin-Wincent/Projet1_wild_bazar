@@ -1,3 +1,34 @@
+body {
+	font-family: 'Abel', sans-serif;
+}
+
+
+/*Navbar*/
+
+.row {
+	margin: 40px 0;
+}
+
+.navbar-light .navbar-brand {
+	color: black;
+	font-size: 30px;
+}
+
+.navbar-light .navbar-brand:hover {
+	color: #ED3759;
+	font-size: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #33383b;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+	color: #ED3759;
+}
+
+
+
 .banniere {
 	position: relative;
 	overflow: hidden;
@@ -5,10 +36,11 @@
 
 .banniere-caption {
 	position: absolute;
-	text-shadow: 1px 1px 1px black;
+	text-shadow: 3px 3px 6px black;
 	color: white;
 	left: 20px;
 	top:20px;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 .img-fluid {
@@ -25,6 +57,8 @@
 
 .card-body {
 		padding: 10px;
+		background-color: #292c2f;
+		color:#DCDCDC;
 	}
 
 .banniere-caption h5 {
@@ -49,7 +83,8 @@
 	left: 0.5rem;
 	top: 0.5rem;
 	color : black;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.7);
+	font-weight: 400;
   }
 
 .card img:hover {
@@ -102,4 +137,342 @@
 	.prix {
 	font-size: 0.9em;
   }
+}
+
+/* Search button*/
+/*search box css start here*/
+.search-sec{
+	background: gray;padding: 2rem;
+}
+.search-slt{
+	display: block;
+	width: 100%;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: #55595c;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	height: calc(3rem + 2px) !important;
+	border-radius:0;
+}
+.wrn-btn{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	 height: calc(3rem + 2px) !important;
+	 border-radius:0;
+}
+
+.search-sec {
+	background: white;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.btn-primary {
+	color: #DCDCDC;
+	background-color: #292c2f;
+	border-color: #292c2f;
+}
+
+.btn-primary:hover {
+	opacity: 0.9;
+	color: white;
+	background-color: #ED3759;
+	border-color: #ED3759;
+}
+
+/*Team*/
+.pt-100{
+	padding-top:100px;
+}
+.pb-100{
+	padding-bottom:100px;
+}
+.section-title {
+margin-bottom: 60px;
+}
+.section-title p {
+color: #777;
+font-size: 16px;
+}
+.section-title h4 {
+text-transform: capitalize;
+font-size: 40px;
+position: relative;
+padding-bottom: 20px;
+margin-bottom: 20px;
+font-weight: 600;
+}
+.section-title h4:before {
+position: absolute;
+content: "";
+width: 60px;
+height: 2px;
+background-color: #ff3636;
+bottom: 0;
+left: 50%;
+margin-left: -30px;
+}
+.section-title h4:after {
+position: absolute;
+background-color: #ff3636;
+content: "";
+width: 10px;
+height: 10px;
+bottom: -4px;
+left: 50%;
+margin-left: -5px;
+border-radius: 50%;
+}
+
+.single-team img {
+width: 100%;
+}
+.single-team {
+position: relative;
+}
+.team-hover {
+background-color: #222;
+color: #fff;
+position: absolute;
+bottom: -107px;
+left: 0;
+width: 100%;
+padding: 10px;
+text-align: center;
+-webkit-transition: .4s;
+transition:.4s
+}
+.team-hover h4 {
+font-size: 20px;
+text-transform: capitalize;
+}
+.team-hover h4 span {
+display: block;
+font-size: 14px;
+font-weight: 300;
+margin: 10px 0;
+}
+.team-hover a {
+display: inline-block;
+color: #fff;
+padding: 0 5px;
+}
+.single-team:hover .team-hover {
+bottom: 0;
+}
+.single-team {
+overflow: hidden;
+}
+
+/* CSS du footer */
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: 16px 'Abel';
+	padding: 55px 50px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Abel', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color: white;
+}
+
+.footer-distributed .footer-links a:hover{
+	color: #ED3759;
+}
+
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #ED3759;;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/*Icon*/
+
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.icon {
+	margin: 50px 0;
+}
+
+.icon-title {
+	margin-top: 30px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*Modal*/
+
+.addcart {
+	color: white;
+	background-color: #ED3759;
+	border-color: #ED3759;
+}
+
+.addcart:hover {
+	opacity: 0.7;
+}
+
+.contactus {
+    color: #DCDCDC;
+    background-color: #ED3759;
+    border-color: #ED3759;
 }
