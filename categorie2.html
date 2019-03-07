@@ -1,301 +1,804 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" href="categorie2.css">
-		<title>WildCars - cabriolet</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<link href="categorie2.css" rel="stylesheet" type="text/css">
+		<title>WildCars</title>
 	</head>
-
 	<body>
-		
-		
-	<header>
-	<nav class="navbar navbar-light bg-light navbar-expand-xxl">
-          <a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WildCars</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="categorie1.html">SUV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categorie2.html">Cabriolets</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categorie3.html">Monospaces</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categorie4.html">Berlines</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="categorie5.html">Motos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html/#aboutus">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html/#contactus">Contact us</a>
-              </li>
-            </ul>
-          </div>
-</nav>
+		<header>
+			<nav class="navbar navbar-light bg-light navbar-expand-xxl">
+				<a class="navbar-brand" href="#"><img src="medias/images/Logo.png"> WildCars</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"><a class="nav-link" href="categorie1.html">SUV</a></li>
+						<li class="nav-item"><a class="nav-link" href="categorie2.html">Convertibles</a></li>
+						<li class="nav-item"><a class="nav-link" href="categorie3.html">Minivans</a></li>
+						<li class="nav-item"><a class="nav-link" href="categorie4.html">Sedans</a></li>
+						<li class="nav-item"><a class="nav-link" href="categorie5.html">Motorcycles</a></li>
+						<li class="nav-item"><a class="nav-link" href="#aboutus">About us</a></li>
+					</ul>
+				</div>
+			</nav>
 			<div class="banniere d-flex justify-content-start align-items-start">
-				<img src="medias/images/header_img.jpg" class="img-fluid" alt="Responsive image">
+				<img src="medias/images/Banniere_categorie2.jpg" class="img-fluid" alt="Responsive image">
 				<div class="banniere-caption text-left">
 					<h5>
-						Cabriolets
+						Convertibles
 					</h5>
 					<p>
-						Roulez en toute liberté
+						Drive freely
 					</p>
 				</div>
 			</div>
 		</header>
+		<!--Icone barre -->
 		<section class="product-list">
-			<!--première ligne de produit -->
 			<div class="container-fluid">
+				<div class="container">
+					<div class="row d-flex justify-content-center align-items-center">
+						<div class="h1 icon-title">
+							Find all our Convertibles here !
+						</div>
+					</div>
+					<div class="row icon">
+						<div class="col-12 col-md-4 text-center">
+							<img src="medias/images/icon_garage.png" class="img-fluid" alt="Responsive image"style="width:100px;height:100px;">
+							<div class="h5">
+								Explore our vehicles park
+							</div>
+						</div>
+						<div class="col-12 col-md-4 text-center">
+							<img src="medias/images/icon_search.png" class="img-fluid" alt="Responsive image"style="width:100px;height:100px;">
+							<div class="h5">
+								Select your model
+							</div>
+						</div>
+						<div class="col-12 col-md-4 text-center">
+							<img src="medias/images/icon_pay.png" class="img-fluid" alt="Responsive image"style="width:100px;height:100px;">
+							<div class="h5">
+								Make your order
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Barre de recherche -->
+				<section class="search-sec">
+					<div class="container-fluid">
+						<form action="#" method="post" novalidate="novalidate">
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+											<select class="form-control search-slt" id="exampleFormControlSelect1">
+												<option>Select Energy</option>
+												<option>Gazole</option>
+												<option>Gasoline</option>
+												<option>Hybrid</option>
+											</select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+											<select class="form-control search-slt" id="exampleFormControlSelect1">
+												<option>Select Price</option>
+												<option>0 to 5 000 €</option>
+												<option>5 001 to 10 000 €</option>
+												<option>10 001 to 20 000 €</option>
+												<option>20 001 to 50 000 €</option>
+												<option> 50 001 €</option>
+											</select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+											<select class="form-control search-slt" id="exampleFormControlSelect1">
+												<option>Select Color</option>
+												<option>Black</option>
+												<option>White</option>
+												<option>Red</option>
+												<option>Green</option>
+												<option>Blue</option>
+												<option>Gray</option>
+											</select>
+										</div>
+										<div class="col-lg-3 col-md-3 col-sm-12 p-0">
+											<button type="button" class="btn btn-primary wrn-btn">Search</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				<!--première ligne de produit -->
 				<div class="row d-flex justify-content-center align-items-center">
 					<div class="card-deck col-sm-12">
-						<div class="card text-center">
-							<img src="medias/images/voiture_luxe1.jpg" class="card-img-top" alt="voiture_1">
+						<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+						<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/voiture_luxe1.jpg" data-toggle="modal" data-target="#voiture_luxe1"class="card-img-top" alt="voiture_1">
+							<div class="modal fade" id="voiture_luxe1" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Audi A5 caracteristics
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/voiture_luxe1.jpg" data-toggle="modal"data-target="#voiture_luxe1" class="card-img-top"alt="voiture_1">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 150 / 82 kW</li>
+															<li class="list-group-item">Tax rating: 7</li>
+															<li class="list-group-item">Fuel consumption combined: 51.5 mpg</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 26 000 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 							<p class="prix">
-								43 000 €
+								26 000 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										AUDI A5
+										Audi A5
 									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_luxe2.jpg" class="card-img-top" alt="voiture_2">
+						<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+						<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/voiture_luxe2.jpg" data-toggle="modal" data-target="#voiture_luxe2"class="card-img-top" alt="voiture_2">
+							<div class="modal fade" id="voiture_luxe2" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Porsche 911 caracteristics
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/voiture_luxe2.jpg" data-toggle="modal"data-target="#voiture_luxe2" class="card-img-top"alt="voiture_1">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gasoline</li>
+															<li class="list-group-item">HP: 250 / 100 kW</li>
+															<li class="list-group-item">Tax rating: 8</li>
+															<li class="list-group-item">Fuel consumption combined: 71.5 mpg</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 39 500 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 							<p class="prix">
-								64 000 €
+								39 500 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										PORSCHE 911
+										Porsche 911
 									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_luxe3.jpg" class="card-img-top" alt="voiture_3">
+						<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+						<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/voiture_luxe3.jpg" data-toggle="modal" data-target="#voiture_luxe3"class="card-img-top" alt="voiture_3">
+							<div class="modal fade" id="voiture_luxe3" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												BMW 330i caracteristics
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/voiture_luxe3.jpg" data-toggle="modal"data-target="#voiture_luxe3" class="card-img-top"alt="voiture_3">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazoline</li>
+															<li class="list-group-item">HP: 270 / 112 kW</li>
+															<li class="list-group-item">Tax rating: 8</li>
+															<li class="list-group-item">Fuel consumption combined: 69.6 mpg</li>
+															<li class="list-group-item">Transmission: Manual</li>
+															<li class="list-group-item">Price: 30 500 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 							<p class="prix">
-								45 000 €
+								30 500 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										BMW SERIE 3
+										BMW 330i
 									</h5>
 								</div>
 							</div>
 						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_luxe4.jpg" class="card-img-top" alt="voiture_4">
+						<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+						<div class="card text-center shadow mb-5 bg-white rounded">
+							<img src="medias/images/voiture_luxe4.jpg" data-toggle="modal" data-target="#voiture_luxe4"class="card-img-top" alt="voiture_4">
+							<div class="modal fade" id="voiture_luxe4" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+								<div class="modal-dialog modal-lg" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+												Mercedes C220 caracteristics
+											</h5>
+											<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										</div>
+										<div class="modal-body">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-sm-12 col-md-6">
+														<img src="medias/images/voiture_luxe4.jpg" data-toggle="modal"data-target="#voiture_luxe4" class="card-img-top"alt="voiture_4">
+													</div>
+													<div class="col-sm-12 col-md-6">
+														<ul class="list-group list-group-flush">
+															<li class="list-group-item">Energy: Gazole</li>
+															<li class="list-group-item">HP: 240 / 112 kW</li>
+															<li class="list-group-item">Tax rating: 7</li>
+															<li class="list-group-item">Fuel consumption combined: 70.5 mpg</li>
+															<li class="list-group-item">Transmission: Automatic</li>
+															<li class="list-group-item">Price: 42 200 €</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+											<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
 							<p class="prix">
-								75 000 €
+								42 200 €
 							</p>
 							<div class="card-body">
 								<div class="card-body">
 									<h5 class="card-title">
-										MERCEDES CLASSE C
+										Mercedes C220
 									</h5>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!--deuxième ligne de produit -->
-				<div class="row d-flex justify-content-center">
-					<div class="card-deck col-sm-12">
-						<div class="card text-center">
-							<img src="medias/images/voiture_middle1.jpg" class="card-img-top" alt="voiture_1">
-							<p class="prix">
-								15 000 €
-							</p>
-							<div class="card-body">
+					<!--deuxième ligne de produit -->
+					<div class="row d-flex justify-content-center align-items-center">
+						<div class="card-deck col-sm-12">
+							<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+							<div class="card text-center shadow mb-5 bg-white rounded">
+								<img src="medias/images/voiture_middle1.jpg" data-toggle="modal" data-target="#voiture_middle1"class="card-img-top" alt="voiture_1">
+								<div class="modal fade" id="voiture_middle1" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+													Volkswagen Coccinelle caracteristics
+												</h5>
+												<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-sm-12 col-md-6">
+															<img src="medias/images/voiture_middle1.jpg" data-toggle="modal"data-target="#voiture_middle1" class="card-img-top"alt="voiture_1">
+														</div>
+														<div class="col-sm-12 col-md-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item">Energy: Gazole</li>
+																<li class="list-group-item">HP: 130 / 75 kW</li>
+																<li class="list-group-item">Tax rating: 5</li>
+																<li class="list-group-item">Fuel consumption combined: 51.5 mpg</li>
+																<li class="list-group-item">Transmission: Manual</li>
+																<li class="list-group-item">Price: 17 000 €</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+												<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="prix">
+									17 000 €
+								</p>
 								<div class="card-body">
-									<h5 class="card-title">
-										VOLKSWAGEN COCCINELLE
-									</h5>
+									<div class="card-body">
+										<h5 class="card-title">
+											Volkswagen Coccinelle
+										</h5>
+									</div>
+								</div>
+							</div>
+							<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+							<div class="card text-center shadow mb-5 bg-white rounded">
+								<img src="medias/images/voiture_middle2.jpg" data-toggle="modal" data-target="#voiture_middle2"class="card-img-top" alt="voiture_2">
+								<div class="modal fade" id="voiture_middle2" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+													Audi A3 caracteristics
+												</h5>
+												<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-sm-12 col-md-6">
+															<img src="medias/images/voiture_middle2.jpg" data-toggle="modal"data-target="#voiture_middle2" class="card-img-top"alt="voiture_1">
+														</div>
+														<div class="col-sm-12 col-md-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item">Energy: Gasole</li>
+																<li class="list-group-item">HP: 140 / 100 kW</li>
+																<li class="list-group-item">Tax rating: 5</li>
+																<li class="list-group-item">Fuel consumption combined: 58.9 mpg</li>
+																<li class="list-group-item">Transmission: Automatic</li>
+																<li class="list-group-item">Price: 19 900 €</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+												<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="prix">
+									19 900 €
+								</p>
+								<div class="card-body">
+									<div class="card-body">
+										<h5 class="card-title">
+											Audi A3
+										</h5>
+									</div>
+								</div>
+							</div>
+							<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+							<div class="card text-center shadow mb-5 bg-white rounded">
+								<img src="medias/images/voiture_middle3.jpg" data-toggle="modal" data-target="#voiture_middle3"class="card-img-top" alt="voiture_middle3">
+								<div class="modal fade" id="voiture_middle3" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+													Renault Megane caracteristics
+												</h5>
+												<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-sm-12 col-md-6">
+															<img src="medias/images/voiture_middle3.jpg" data-toggle="modal"data-target="#voiture_middle3" class="card-img-top"alt="voiture_3">
+														</div>
+														<div class="col-sm-12 col-md-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item">Energy: Gazole</li>
+																<li class="list-group-item">HP: 110 / 65 kW</li>
+																<li class="list-group-item">Tax rating: 4</li>
+																<li class="list-group-item">Fuel consumption combined: 51.6 mpg</li>
+																<li class="list-group-item">Transmission: Manual</li>
+																<li class="list-group-item">Price: 8 000 €</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+												<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="prix">
+									8 000 €
+								</p>
+								<div class="card-body">
+									<div class="card-body">
+										<h5 class="card-title">
+											Renault Megane
+										</h5>
+									</div>
+								</div>
+							</div>
+							<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+							<div class="card text-center shadow mb-5 bg-white rounded">
+								<img src="medias/images/voiture_middle4.jpg" data-toggle="modal" data-target="#voiture_middle4"class="card-img-top" alt="voiture_4">
+								<div class="modal fade" id="voiture_middle4" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+													Opel Astra caracteristics
+												</h5>
+												<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<div class="container-fluid">
+													<div class="row">
+														<div class="col-sm-12 col-md-6">
+															<img src="medias/images/voiture_middle4.jpg" data-toggle="modal"data-target="#voiture_middle4" class="card-img-top"alt="voiture_4">
+														</div>
+														<div class="col-sm-12 col-md-6">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item">Energy: Gazole</li>
+																<li class="list-group-item">HP: 140 / 80 kW</li>
+																<li class="list-group-item">Tax rating: 6</li>
+																<li class="list-group-item">Fuel consumption combined: 60.5 mpg</li>
+																<li class="list-group-item">Transmission: Manual</li>
+																<li class="list-group-item">Price: 14 900 €</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+												<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="prix">
+									14 900 €
+								</p>
+								<div class="card-body">
+									<div class="card-body">
+										<h5 class="card-title">
+											Opel Astra
+										</h5>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_middle2.jpg" class="card-img-top" alt="voiture_2">
-							<p class="prix">
-								20 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										AUDI A3
-									</h5>
+						<!--troisième ligne de produit -->
+						<div class="row d-flex justify-content-center align-items-center">
+							<div class="card-deck col-sm-12">
+								<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+								<div class="card text-center shadow mb-5 bg-white rounded">
+									<img src="medias/images/voiture_retro1.jpg" data-toggle="modal" data-target="#voiture_retro1"class="card-img-top" alt="voiture_1">
+									<div class="modal fade" id="voiture_retro1" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+														Mercedes 220 A caracteristics
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+												<div class="modal-body">
+													<div class="container-fluid">
+														<div class="row">
+															<div class="col-sm-12 col-md-6">
+																<img src="medias/images/voiture_retro1.jpg" data-toggle="modal"data-target="#voiture_retro1" class="card-img-top"alt="voiture_1">
+															</div>
+															<div class="col-sm-12 col-md-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item">Energy: Gazoline</li>
+																	<li class="list-group-item">HP: 90 / 45 kW</li>
+																	<li class="list-group-item">Tax rating: 4</li>
+																	<li class="list-group-item">Fuel consumption combined: 40 mpg</li>
+																	<li class="list-group-item">Transmission: Manual</li>
+																	<li class="list-group-item">Price: 166 000 €</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+													<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="prix">
+										166 000 €
+									</p>
+									<div class="card-body">
+										<div class="card-body">
+											<h5 class="card-title">
+												Mercedes 220 A
+											</h5>
+										</div>
+									</div>
+								</div>
+								<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+								<div class="card text-center shadow mb-5 bg-white rounded">
+									<img src="medias/images/voiture_retro2.jpg" data-toggle="modal" data-target="#voiture_retro2"class="card-img-top" alt="voiture_2">
+									<div class="modal fade" id="voiture_retro2" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+														Austin Healey 3000 caracteristics
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+												<div class="modal-body">
+													<div class="container-fluid">
+														<div class="row">
+															<div class="col-sm-12 col-md-6">
+																<img src="medias/images/voiture_retro2.jpg" data-toggle="modal"data-target="#voiture_retro2" class="card-img-top"alt="voiture_2">
+															</div>
+															<div class="col-sm-12 col-md-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item">Energy: Gasoline</li>
+																	<li class="list-group-item">HP: 120 / 100 kW</li>
+																	<li class="list-group-item">Tax rating: 8</li>
+																	<li class="list-group-item">Fuel consumption combined: 71.5 mpg</li>
+																	<li class="list-group-item">Transmission: Manual</li>
+																	<li class="list-group-item">Price: 95 000 €</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+													<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="prix">
+										95 000 €
+									</p>
+									<div class="card-body">
+										<div class="card-body">
+											<h5 class="card-title">
+												Austin Healey 3000
+											</h5>
+										</div>
+									</div>
+								</div>
+								<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+								<div class="card text-center shadow mb-5 bg-white rounded">
+									<img src="medias/images/voiture_retro3.jpg" data-toggle="modal" data-target="#voiture_retro3"class="card-img-top" alt="voiture_3">
+									<div class="modal fade" id="voiture_retro3" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+														Jaguar XK 120 caracteristics
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+												<div class="modal-body">
+													<div class="container-fluid">
+														<div class="row">
+															<div class="col-sm-12 col-md-6">
+																<img src="medias/images/voiture_retro3.jpg" data-toggle="modal"data-target="#voiture_retro3" class="card-img-top"alt="voiture_3">
+															</div>
+															<div class="col-sm-12 col-md-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item">Energy: Gazoline</li>
+																	<li class="list-group-item">HP: 70 / 80 kW</li>
+																	<li class="list-group-item">Tax rating: 8</li>
+																	<li class="list-group-item">Fuel consumption combined: 69.6 mpg</li>
+																	<li class="list-group-item">Transmission: Manual</li>
+																	<li class="list-group-item">Price: 138 000 €</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+													<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="prix">
+										138 000 €
+									</p>
+									<div class="card-body">
+										<div class="card-body">
+											<h5 class="card-title">
+												Jaguar XK 120
+											</h5>
+										</div>
+									</div>
+								</div>
+								<!-- CARD + modal --------------------------------------------------------------------------------------------------------------------------------->
+								<div class="card text-center shadow mb-5 bg-white rounded">
+									<img src="medias/images/voiture_retro4.jpg" data-toggle="modal" data-target="#voiture_retro4"class="card-img-top" alt="voiture_4">
+									<div class="modal fade" id="voiture_retro4" tabindex="-1" role="dialog"aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title justify-content-center" id="exampleModalLongTitle">
+														Renault Vivastella caracteristics
+													</h5>
+													<button type="button" class="close" data-dismiss="modal"aria-label="Close"><span aria-hidden="true">&times;</span></button>
+												</div>
+												<div class="modal-body">
+													<div class="container-fluid">
+														<div class="row">
+															<div class="col-sm-12 col-md-6">
+																<img src="medias/images/voiture_retro4.jpg" data-toggle="modal"data-target="#voiture_retro4" class="card-img-top"alt="voiture_4">
+															</div>
+															<div class="col-sm-12 col-md-6">
+																<ul class="list-group list-group-flush">
+																	<li class="list-group-item">Energy: Gazole</li>
+																	<li class="list-group-item">HP: 50 / 35 kW</li>
+																	<li class="list-group-item">Tax rating: 7</li>
+																	<li class="list-group-item">Fuel consumption combined: 30.5 mpg</li>
+																	<li class="list-group-item">Transmission: Automatic</li>
+																	<li class="list-group-item">Price: 38 000 €</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary addcart"data-dismiss="modal">Add to cart</button>
+													<button type="button" class="btn btn-primary"data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<p class="prix">
+										38 000 €
+									</p>
+									<div class="card-body">
+										<div class="card-body">
+											<h5 class="card-title">
+												Renault Vivastella 
+											</h5>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_middle3.jpg" class="card-img-top" alt="voiture_3">
-							<p class="prix">
-								8 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										RENAULT MEGANE
-									</h5>
+						</section>
+						<footer class="footer-distributed">
+							<div class="footer-left">
+								<h3>
+									<span><img src="medias/images/Logo.png"></span>
+									WildCars
+								</h3>
+								<p class="footer-links">
+									<a href="#">Home</a>
+									·
+									<a href="categorie1.html">SUV</a>
+									·
+									<a href="categorie2.html">Convertibles</a>
+									·
+									<a href="categorie3.html">Minivans</a>
+									·
+									<a href="categorie4.html">Sedans</a>
+									·
+									<a href="categorie5.html">Motorcycles</a>
+									·
+									<a href="#aboutus">About us</a>
+								</p>
+								<button type="button" class="btn btn-primary contactus" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact us</button>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">
+													New message
+												</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="form-group">
+														<label for="recipient-name" class="col-form-label">Recipient:</label>
+														<input placeholder="@" type="text" class="form-control" id="recipient-name">
+													</div>
+													<div class="form-group">
+														<label for="message-text" class="col-form-label">Message:</label>
+														<textarea class="form-control" id="message-text"></textarea>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-primary">Send message</button>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_middle4.jpg" class="card-img-top" alt="voiture_4">
-							<p class="prix">
-								10 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										OPEL ASTRA
-									</h5>
+							<div class="footer-center">
+								<div>
+									<i class="fa fa-map-marker"></i>
+									<p>
+										<span>17 rue Delandine</span>
+										Lyon, France
+									</p>
+								</div>
+								<div>
+									<i class="fa fa-phone"></i>
+									<p>
+										06 58 46 83 32
+									</p>
+								</div>
+								<div>
+									<i class="fa fa-envelope"></i>
+									<p>
+										<a href="mailto:support@company.com">contact@wildcars.com</a>
+									</p>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-				<!--troisième ligne de produit -->
-				<div class="row d-flex justify-content-center">
-					<div class="card-deck col-sm-12">
-						<div class="card text-center">
-							<img src="medias/images/voiture_retro1.jpg" class="card-img-top" alt="voiture_1">
-							<p class="prix">
-								166 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										MERCEDES 220 CABRIOLET A
-									</h5>
-								</div>
+							<div class="footer-right">
+								<p class="footer-company-about">
+									<span>About the company</span>
+									We sell top quality vehicles and some unique models with 5 years guarantee. Our team are passionate andprofessionnal and our prices are the best on the market.
+								</p>
 							</div>
-						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_retro2.jpg" class="card-img-top" alt="voiture_2">
-							<p class="prix">
-								95 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										AUSTIN HEALEY 3000
-									</h5>
-								</div>
-							</div>
-						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_retro3.jpg" class="card-img-top" alt="voiture_3">
-							<p class="prix">
-								138 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										JAGUAR XK 120
-									</h5>
-								</div>
-							</div>
-						</div>
-						<div class="card text-center">
-							<img src="medias/images/voiture_retro4.jpg" class="card-img-top" alt="voiture_4">
-							<p class="prix">
-								38 000 €
-							</p>
-							<div class="card-body">
-								<div class="card-body">
-									<h5 class="card-title">
-										RENAULT VIVASTELLA
-									</h5>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<footer class="footer-distributed">
-
-			<div class="footer-left">
-
-				<h3><span><img src="medias/images/Logo.png"></span> WildCars</h3>
-
-				<p class="footer-links">
-					<a href="#">Home</a>
-					·
-					<a href="#">SUV</a>
-					·
-					<a href="#">Cabriolets</a>
-					·
-					<a href="#">Monospaces</a>
-					·
-					<a href="#">Berlines</a>
-					·
-					<a href="#">Motos</a>
-					·
-					<a href="#">About us</a>
-
-				</p>
-
-				<p class="footer-company-name">Company Name &copy; 2018</p>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>17 rue Delandine</span> Lyon, France</p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p>06 58 46 83 32</p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">contact@wildcars.com</a></p>
-				</div>
-
-			</div>
-
-			<div class="footer-right">
-
-				<p class="footer-company-about">
-					<span>About the company</span>
-					We sell top quality vehicles and some unique models with 5 years guarantee. Our team are passionate and professionnal and our prices are the best on the market.
-				</p>
-
-			
-
-			</div>
-		</footer>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
-</html>
+						</footer>
+						<!-- Optional JavaScript -->
+						<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+						<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous"></script>
+						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"crossorigin="anonymous"></script>
+					</body>
+				</html>
 

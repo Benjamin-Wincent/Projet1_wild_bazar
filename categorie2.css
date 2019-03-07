@@ -1,82 +1,91 @@
-.row {
+
+body
+{
+	font-family: 'Abel', sans-serif;
+}
+
+/*Navbar*/
+.row
+{
 	margin: 40px 0;
 }
 
-.navbar-light .navbar-brand {
+.navbar-light .navbar-brand
+{
 	color: black;
 	font-size: 30px;
 }
 
-.navbar-light .navbar-brand:hover {
+.navbar-light .navbar-brand:hover
+{
 	color: #ED3759;
 	font-size: 30px;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link
+{
 	color: #33383b;
 }
 
-.navbar-light .navbar-nav .nav-link:hover{
+.navbar-light .navbar-nav .nav-link:hover
+{
 	color: #ED3759;
 }
 
-/* Design de la photo de couverture et du texte par dessus */
-
-.banniere {
+.banniere
+{
 	position: relative;
 	overflow: hidden;
 }
 
-.banniere-caption {
+.banniere-caption
+{
 	position: absolute;
-	text-shadow: 2px 2px 5px black;
+	text-shadow: 3px 3px 6px black;
 	color: white;
-	left: 30px;
-	top: 20px;
-	color :white;
-	opacity: 0.7;
+	left: 20px;
+	top:20px;
+	font-family: 'Noto Sans', sans-serif;
 }
 
-.banniere-caption h5 {
-	font-size: 7vmax;
-	margin: 0;
-}
-
-.banniere-caption p {
-	font-size: 3vmax;
-	margin: 0;
-}
-
-/* Proprités pour l'animation de la photo en couverture */
-
-.img-fluid {
+.img-fluid
+{
 	transition: transform .5s;
 }
 
-.img-fluid:hover {
-	transform: scale(1.1);	
+.img-fluid:hover
+{
+	transform: scale(1.1);
 }
 
-/* Design et animation des card */
-
-.card-body {
+.card-body
+{
 	padding: 10px;
-	color: #c5c5c5;
-	background-color: #33383b ;
+	background-color: #292c2f;
+	color:#DCDCDC;
 }
 
-.card img:hover {
-	opacity: 0.7;
-
+.banniere-caption h5
+{
+	font-size: 8vmin;
 }
 
-/* Placement et design de l'étiquette prix */
+.banniere-caption p
+{
+	font-size: 3.5vmin;
+}
 
-.prix {
+.row
+{
+	margin: 15px 0;
+}
+
+.prix
+{
 	border-radius: 5px;
 	padding: 4px;
-	font-size: 1em;
-	font-weight: 800;
+	font-size: 1.1em;
+	font-weight: 500;
 	position: absolute;
 	left: 0.5rem;
 	top: 0.5rem;
@@ -85,127 +94,182 @@
 	transition: transform .2s;
 }
 
-.card:hover .prix {
+.card img:hover
+{
+	opacity: 0.7;
+}
+
+.card:hover .prix
+{
 	transform: translate(5px, 5px);
 }
 
-/* Adaptation de l'étiquette de prix et des card, 
-taille et police en fonction du support (tablette, smartphone, ...) */
-
-@media screen and (max-width: 1024px) {
-	.card-title {
+@media screen and (max-width: 1024px)
+{
+	.card-title
+	{
 		font-size: 14px;
 		margin: 1px;
 	}
 
-	.card-body {
+	.card-body
+	{
 		padding: 2px;
 	}
-
 }
 
-
-@media screen and (max-width: 815px) {
-	.card-title {
+@media screen and (max-width: 815px)
+{
+	.card-title
+	{
 		font-size: 12px;
 		margin: 1px;
 	}
 
-	.card-body {
+	.card-body
+	{
 		padding: 2px;
 	}
 
-	.prix {
+	.prix
+	{
 		font-size: 0.7em;
 	}
-
 }
 
-
-@media screen and (max-width: 576px) {
-	.card-title {
+@media screen and (max-width: 576px)
+{
+	.card-title
+	{
 		font-size: 16px;
 		margin: 1px;
 	}
 
-	.card-body {
+	.card-body
+	{
 		padding: 5px;
 	}
 
-	.prix {
+	.prix
+	{
 		font-size: 0.9em;
 	}
-
-	.banniere-caption h5 {
-	font-size: 7vmin;
-
 }
 
-	.banniere-caption p {
-		font-size: 3vmin;
-	}
+/* Search button*/
+/*search box css start here*/
+.search-sec
+{
+	background: gray;
+	padding: 2rem;
+}
+
+.search-slt
+{
+	display: block;
+	width: 100%;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: #55595c;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	height: calc(3rem + 2px) !important;
+	border-radius:0;
+}
+
+.wrn-btn
+{
+	width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	height: calc(3rem + 2px) !important;
+	border-radius:0;
+}
+
+.search-sec
+{
+	background: white;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.btn-primary
+{
+	color: #DCDCDC;
+	background-color: #292c2f;
+	border-color: #292c2f;
+}
+
+.btn-primary:hover
+{
+	opacity: 0.9;
+	color: white;
+	background-color: #ED3759;
+	border-color: #ED3759;
 }
 
 /* CSS du footer */
-
-.footer-distributed{
+.footer-distributed
+{
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	font: bold 16px sans-serif;
-
+	font: 16px 'Abel';
 	padding: 55px 50px;
-	margin-top: 80px;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right
+{
 	display: inline-block;
 	vertical-align: top;
 }
 
 /* Footer left */
-
-.footer-distributed .footer-left{
+.footer-distributed .footer-left
+{
 	width: 40%;
 }
 
 /* The company logo */
-
-.footer-distributed h3{
+.footer-distributed h3
+{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: normal 36px 'Abel', cursive;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
+.footer-distributed h3 span
+{
 	color:  #5383d3;
 }
 
 /* Footer links */
-
-.footer-distributed .footer-links{
+.footer-distributed .footer-links
+{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
 
-.footer-distributed .footer-links a{
+.footer-distributed .footer-links a
+{
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color: white;
 }
 
-.footer-distributed .footer-links a:hover{
+.footer-distributed .footer-links a:hover
+{
 	color: #ED3759;
 }
 
-
-.footer-distributed .footer-company-name{
+.footer-distributed .footer-company-name
+{
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
@@ -213,12 +277,13 @@ taille et police en fonction du support (tablette, smartphone, ...) */
 }
 
 /* Footer Center */
-
-.footer-distributed .footer-center{
+.footer-distributed .footer-center
+{
 	width: 35%;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-center i
+{
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
@@ -231,93 +296,136 @@ taille et police en fonction du support (tablette, smartphone, ...) */
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center i.fa-envelope
+{
 	font-size: 17px;
 	line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-center p
+{
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
 
-.footer-distributed .footer-center p span{
+.footer-distributed .footer-center p span
+{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a{
-	color:  #ED3759;;
-	text-decoration: none;;
+.footer-distributed .footer-center p a
+{
+	color:  #ED3759;
+	;
+	text-decoration: none;
+	;
 }
 
-
 /* Footer Right */
-
-.footer-distributed .footer-right{
+.footer-distributed .footer-right
+{
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-distributed .footer-company-about
+{
 	line-height: 20px;
 	color:  #92999f;
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span{
+.footer-distributed .footer-company-about span
+{
 	display: block;
 	color:  #ffffff;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 16px;
 	margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
+.footer-distributed .footer-icons
+{
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a
+{
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
+@media (max-width: 880px)
+{
+	.footer-distributed
+	{
 		font: bold 14px sans-serif;
 	}
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
+	.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right
+	{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i{
+	.footer-distributed .footer-center i
+	{
 		margin-left: 0;
 	}
+}
 
+/*Icon*/
+.container-fluid
+{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.icon
+{
+	margin: 50px 0;
+}
+
+.icon-title
+{
+	margin-top: 30px;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/*Modal*/
+.addcart
+{
+	color: white;
+	background-color: #ED3759;
+	border-color: #ED3759;
+}
+
+.addcart:hover
+{
+	opacity: 0.7;
+}
+
+.contactus
+{
+	color: #DCDCDC;
+	background-color: #ED3759;
+	border-color: #ED3759;
 }
