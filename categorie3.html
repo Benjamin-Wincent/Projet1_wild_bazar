@@ -10,6 +10,8 @@
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link href="categorie3.css" rel="stylesheet" type="text/css">
 	<title>WildCars - Minivans</title>
 </head>
@@ -19,33 +21,39 @@
 	<header>
 		<nav class="navbar navbar-light bg-light navbar-expand-xxl">
 			<a class="navbar-brand" href="index.html"><img src="medias/images/Logo.png"> WildCars</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="categorie1.html">SUV</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="categorie2.html">Convertibles</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="categorie3.html">Minivans</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="categorie4.html">Sedans</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="categorie5.html">Motorcycles</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#aboutus">About us</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+			<ul class="nav navbar-right ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
+			</ul>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="categorie1.html">SUV</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="categorie2.html">Convertibles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="categorie3.html">Minivans</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="categorie4.html">Sedans</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="categorie5.html">Motorcycles</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html/#aboutus">About us</a>
+				</li>
+			</ul>
+		</div>
+	</nav> 
 		<div class="banniere d-flex justify-content-start align-items-start">
 			<img src="medias/images/Banniere_categorie3.jpg" class="img-fluid" alt="Responsive image">
 			<div class="banniere-caption text-left">
@@ -873,7 +881,7 @@
 				·
 				<a href="categorie5.html">Motorcycles</a>
 				·
-				<a href="#aboutus">About us</a>
+				<a href="index.html/#aboutus">About us</a>
 			</p>
 			<button type="button" class="btn btn-primary contactus" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Contact us</button>
 			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

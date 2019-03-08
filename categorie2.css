@@ -32,6 +32,23 @@ body
 	color: #ED3759;
 }
 
+.nav-item {
+	list-style: none;
+}
+
+.nav-link {
+	color: black;
+
+}
+.navright {
+	flex-direction: row;
+}
+
+.nav-link:hover {
+	opacity: 0.9;
+	color:#ED3759;
+}
+
 .banniere
 {
 	position: relative;
