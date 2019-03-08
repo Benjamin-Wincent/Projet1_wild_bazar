@@ -439,7 +439,7 @@ div.card_categorie
 
 .parallax {
 
-	margin-top: 90px;
+	margin-top: 100px;
 	margin-bottom: 30px;
 
 	/* The image used */
@@ -599,4 +599,8 @@ border-bottom: 3px solid transparent;
 border-top: 3px solid
 #F62459
 ;
+}
+
+h1 .categorie-title {
+	font-size: 40px;
 }
