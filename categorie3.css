@@ -476,3 +476,27 @@ overflow: hidden;
     background-color: #ED3759;
     border-color: #ED3759;
 }
+
+/*Mise en forme des icones social media dans navbar*/
+
+.nav-item {
+	list-style: none;
+}
+
+.nav-link {
+	color: black;
+	
+}
+.navright {
+	flex-direction: row;
+}
+
+.nav-link:hover {
+	opacity: 0.9;
+	color: #ED3759;
+}
+
+.card:hover {
+	border-color: black;
+}
+
