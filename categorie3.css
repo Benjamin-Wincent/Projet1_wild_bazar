@@ -650,3 +650,8 @@ border-top: 3px solid
 .tireAR {
 	-webkit-animation: tireAR 1s linear infinite;
 } 
+
+#myContainer {
+	height: 150px;
+	border: 1px solid red;
+}
