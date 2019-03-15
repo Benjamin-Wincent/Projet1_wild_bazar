@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link href="categorie3.css" rel="stylesheet" type="text/css">
+	<script src="script.js"></script>
 	<title>WildCars </title>
 </head>
 
@@ -118,9 +119,35 @@
 	</div>
 </section>
 
+<!--Icone barre -->
+<section class="icon-list">
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row icon">
+				<div class="col-12 col-md-4 text-center">
+					<img src="medias/images/Icon_name2.png" class="img-fluid" alt="icon"
+					style="width:100px;height:100px;">
+					<div class="h5">5 years warranty</div>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<img src="medias/images/Icon_SAV.png" class="img-fluid" alt="icon"
+					style="width:100px;height:100px;">
+					<div class="h5">On-site repair</div>
+				</div>
+				<div class="col-12 col-md-4 text-center">
+					<img src="medias/images/Icon_name.png" class="img-fluid" alt="icon"
+					style="width:100px;height:100px;">
+					<div class="h5">Professional team</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Categories-->
 <section>
-	<div class="container-fluid">
+	<div class="container-fluid text-center">
+		<h1 class="categorie-title">Categorie</h1>
 		<div class="row">
 			<div class="col-sm col-md col-lg">
 				<a href="categorie1.html"><img src="medias/images/Banniere_categorie1.jpg" class="img-fluid" alt="Responsive image"></a>
@@ -194,30 +221,21 @@
 
 </section>
 
-<!--Icone barre -->
-<section class="icon-list">
-	<div class="container-fluid">
-		<div class="container">
-			<div class="row icon">
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_name2.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
-					<div class="h5">5 years warranty</div>
-				</div>
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_SAV.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
-					<div class="h5">On-site repair</div>
-				</div>
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_name.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
-					<div class="h5">Professional team</div>
-				</div>
+<!-- Car moving with javascript -->
+
+	<p>
+		<button onclick="myMove()">Click Me</button>
+	</p>
+	<div class="row car-move">
+		<div id="myContainer">
+			<div id="myAnimation">
+				<img src="medias/images/voiture.png">
+				<img src="medias/images/pneu.png" class="tireAV">
+				<img src="medias/images/pneu.png" class="tireAR">
 			</div>
 		</div>
 	</div>
-</section>
+
 
 <!-- Our Team -->
 <section class="team-area pt-100 pb-100" id="team">
@@ -278,6 +296,8 @@
 		</div>
 	</div>
 </section>
+
+
 
 <!--Footer -->
 <footer class="footer-distributed">
