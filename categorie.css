@@ -43,6 +43,9 @@ body {
 	color:#ED3759;
 }
 
+a.nav-link {
+  font-size: 1.5em;
+}
 
 /*Banniere*/
 
@@ -107,45 +110,17 @@ body {
 	transform: translate(5px, 5px);
 }
 
-@media screen and (max-width: 1024px) {
-	.card-title {
-		font-size: 14px;
-		margin: 1px;
-	}
 
-	.card-body {
-		padding: 2px;
-	}
+.icon-img {
+  width: 150px;
 }
 
-@media screen and (max-width: 815px) {
-	.card-title {
-		font-size: 12px;
-		margin: 1px;
-	}
-
-	.card-body {
-		padding: 2px;
-	}
-
-	.prix	{
-		font-size: 0.7em;
-	}
+.icon-list {
+  margin: 150px 0;
 }
 
-@media screen and (max-width: 576px) {
-	.card-title	{
-		font-size: 16px;
-		margin: 1px;
-	}
-
-	.card-body {
-		padding: 5px;
-	}
-
-	.prix	{
-		font-size: 0.9em;
-	}
+div.h5 {
+  font-size: 1.8em;
 }
 
 /* Search button*/
@@ -384,4 +359,98 @@ body {
 	color: #DCDCDC;
 	background-color: #ED3759;
 	border-color: #ED3759;
+}
+
+
+/* responsivité */
+
+@media screen and (max-width: 1024px) {
+	.card-title {
+		font-size: 14px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 2px;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.card-title {
+		font-size: 12px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 2px;
+	}
+
+	.prix	{
+		font-size: 0.7em;
+	}
+
+
+  .icon-img {
+  width: 100px;
+}
+
+.icon-list {
+  margin: 100px 0;
+}
+
+div.h5 {
+  font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 576px) {
+	.card-title	{
+		font-size: 16px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+	.prix	{
+		font-size: 0.9em;
+	}
+
+	  /*Icon*/
+
+	.icon {
+		margin: 0;
+	}
+
+	.icon-img {
+	  width: 80px;
+	}
+
+	.icon-list {
+	  margin: 55px 0;
+	}
+
+	div.h5 {
+	  font-size: 1em;
+	}
+
+	div.col-12.col-md-4.text-center {
+	  padding-top: 25px;
+	}
+
+	a.nav-link {
+	  font-size: 1em;
+	}
+
+	div.h1.icon-title.text-center {
+		font-size: 1em;
+		font-weight: 600;
+	}
+
+	div.col-sm-4.col-md-4.text-center {
+		padding-top: 25px;
+	}
+
+
 }

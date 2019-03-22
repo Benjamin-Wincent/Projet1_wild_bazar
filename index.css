@@ -2,12 +2,24 @@ body {
   font-family: 'Abel', sans-serif;
 }
 
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
-/*Navbar*/
+.img-fluid {
+  transition: transform .5s;
+}
+
+.img-fluid:hover {
+  transform: scale(1.05);
+}
 
 .row {
   margin: 40px 0;
 }
+
+/*Navbar*/
 
 .navbar-light .navbar-brand {
   color: black;
@@ -44,6 +56,9 @@ body {
   color:#ED3759;
 }
 
+a.nav-link {
+  font-size: 1.5em;
+}
 
 /*Carousel*/
 
@@ -60,90 +75,82 @@ body {
 }
 
 
-/*Banniere*/
-
-.img-fluid {
-  transition: transform .5s;
-}
-
-.img-fluid:hover {
-  transform: scale(1.05);
-}
-
-
-/* Search button*/
-/*search box css start here*/
-.search-sec{
-  background: gray;padding: 2rem;
-}
-.search-slt{
-  display: block;
-  width: 100%;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  color: #55595c;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc;
-  height: calc(3rem + 2px) !important;
-  border-radius:0;
-}
-.wrn-btn{
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  height: calc(3rem + 2px) !important;
-  border-radius:0;
-}
-
-.search-sec {
-  background: white;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.btn-primary {
-  color: #DCDCDC;
-  background-color: #292c2f;
-  border-color: #292c2f;
-}
-
-.btn-primary:hover {
-  opacity: 0.9;
-  color: white;
-  background-color: #ED3759;
-  border-color: #ED3759;
-}
-
-
 /*Icon*/
 
-.container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.icon {
-  margin: 50px 0;
-}
-
-.icon-title {
-  margin-top: 30px;
-  font-family: 'Noto Sans', sans-serif;
+.icon-img {
+  width: 150px;
 }
 
 .icon-list {
-  margin: 200px 0;
+  margin: 150px 0;
+}
+
+div.h5 {
+  font-size: 1.8em;
 }
 
 
-/*Modal*/
 
-.contactus {
-  color: #DCDCDC;
-  background-color: #ED3759;
-  border-color: #ED3759;
+/* Categorie */
+
+h1.categorie-title {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+
+.picture
+{
+  position: relative;
+}
+
+.name_categorie1
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:150%;
+  color:white;
+}
+
+.name_categorie2
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:150%;
+  color:white;
+}
+
+.name_categorie3
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:150%;
+  color:white;
+}
+
+.name_categorie4
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:150%;
+  color:white;
+}
+.name_categorie5
+{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:150%;
+  color:white;
 }
 
 /*Parralax*/
@@ -151,7 +158,6 @@ body {
 .parallax {
   margin-top: 90px;
   margin-bottom: 30px;
-
   /* The image used */
   bottom: ;
   padding-top: 150px;
@@ -161,10 +167,8 @@ body {
   width: 100%;
   background-image: url("https://www.auto-moto.com/wp-content/uploads/sites/9/2017/08/new-continental-gt-23.jpg");
   opacity: 0.5;
-
   /* Set a specific height */
   height: 400px;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -224,134 +228,162 @@ body {
 
 /* Top sell */
 
-.top-sell {
-  width: 15vw;
-
-}
-
-div.col-sm.col-md.col-lg.sell {
-  border: 1px solid gray;
-  overflow: hidden;
-}
-
-.card-selling {
-  margin-top: 1.2rem;
-}
-
 #topselling {
   font-size: 50px;
+  text-align: center;
+  text-transform:uppercase;
+}
+
+.top-sell-list {
+  list-style: none;
+  font-weight: 600;
 }
 
 
+h5.card-title.text-center {
+  color: #ED3759;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.card-body {
+padding: 10px;
+background-color: #292C2F;
+color:#DCDCDC;
+}
+
 .ribbon {
-position: absolute;
-right: -5px;
-top: -5px;
-z-index: 1;
-overflow: hidden;
-width: 75px;
-height: 75px;
-text-align: center;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+  text-align: center;
 }
 
 .ribbon span {
-font-size: 10px;
-color:#FFF;
-text-transform: uppercase;
-text-align: center;
-font-weight: bold;
-line-height: 20px;
-transform: rotate(45deg);
-width: 100px;
-display: block;
-background:#ED3759;
-box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
-position: absolute;
-top: 19px;
-right: -21px;
+  font-size: 10px;
+  color:
+  #FFF
+  ;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 20px;
+  transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background:
+  #ED3759
+  ;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px;
+  right: -21px;
 
 }
 
 .ribbon span::before {
-content: '';
-position: absolute;
-left: 0%;
-top: 100%;
-z-index: -1;
-border-left: 3px solid #F62459;
-border-right: 3px solid transparent;
-border-bottom: 3px solid transparent;
-border-top: 3px solid #F62459;
+  content: '';
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  z-index: -1;
+  border-left: 3px solid
+  #F62459
+  ;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid
+  #F62459
+  ;
 }
 
 .ribbon span::after {
-content: '';
-position: absolute;
-right: 0%;
-top: 100%;
-z-index: -1;
-border-right: 3px solid #F62459;
-border-left: 3px solid transparent;
-border-bottom: 3px solid transparent;
-border-top: 3px solid #F62459;
+  content: '';
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: -1;
+  border-right: 3px solid
+  #F62459
+  ;
+  border-left: 2px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid
+  #F62459
+  ;
 }
+
+
 
 
 /* CSS for car move */
 
 #myContainer {
-  width: 100%;
-  position: relative;
+width: 100%;
+position: relative;
+
 }
 
 #myAnimation {
-  position: absolute;
-  right: 0px;
+position: absolute;
+right: 0px;
 }
 
 
 .tireAR {
-  position: absolute;
-  top: 51%;
-  right: 17.5%;
+position: absolute;
+top: 51%;
+right: 17.5%;
+width: 7vw;
 }
 
 .tireAV {
-  position: absolute;
-  top: 51%;
-  right: 71.5%;
+position: absolute;
+top: 51%;
+right: 71.5%;
+width: 7vw;
 }
 
 @-webkit-keyframes tireAV {
-  from{
-    -webkit-transform: rotate(360deg);
-  }
-  to{
-    -webkit-transform: rotate(0deg);
-  }
+from{
+-webkit-transform: rotate(360deg);
+}
+to{
+-webkit-transform: rotate(0deg);
+}
 }
 
 .tireAV {
-  -webkit-animation: tireAV 1s linear infinite;
+-webkit-animation: tireAV 1s linear infinite;
 }
 
 @-webkit-keyframes tireAR {
-  from{
-    -webkit-transform: rotate(360deg);
-  }
-  to{
-    -webkit-transform: rotate(0deg);
-  }
+from{
+-webkit-transform: rotate(360deg);
+}
+to{
+-webkit-transform: rotate(0deg);
+}
 }
 
 .tireAR {
-  -webkit-animation: tireAR 1s linear infinite;
+-webkit-animation: tireAR 1s linear infinite;
 }
 
 #myContainer {
-  height: 150px;
-  border: 1px solid red;
+height: 16vw;
+
 }
+
+.voiture {
+width: 50vw;
+}
+
+
 
 /* CSS du footer */
 
@@ -527,6 +559,16 @@ border-top: 3px solid #F62459;
 
 }
 
+
+/*Modal contact us*/
+
+.contactus {
+  color: #DCDCDC;
+  background-color: #ED3759;
+  border-color: #ED3759;
+}
+
+
 /* responsivité */
 
 @media screen and (max-width: 1024px) {
@@ -537,10 +579,22 @@ border-top: 3px solid #F62459;
 }
 
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 850px) {
   .card-title {
     font-size: 12px;
     margin: 1px;
+  }
+
+  .icon-img {
+    width: 100px;
+  }
+
+  .icon-list {
+    margin: 100px 0;
+  }
+
+  div.h5 {
+    font-size: 1.2em;
   }
 }
 
@@ -550,4 +604,27 @@ border-top: 3px solid #F62459;
     font-size: 16px;
     margin: 1px;
   }
+
+  /*Icon*/
+
+  .icon-img {
+    width: 80px;
+  }
+
+  .icon-list {
+    margin: 55px 0;
+  }
+
+  div.h5 {
+    font-size: 1em;
+  }
+
+  div.col-12.col-md-4.text-center {
+    padding-top: 25px;
+  }
+
+  a.nav-link {
+    font-size: 1em;
+  }
+
 }
