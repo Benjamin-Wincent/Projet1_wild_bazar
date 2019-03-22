@@ -325,7 +325,7 @@ color:#DCDCDC;
 #myContainer {
 width: 100%;
 position: relative;
-
+height: 16vw;
 }
 
 #myAnimation {
@@ -333,6 +333,9 @@ position: absolute;
 right: 0px;
 }
 
+.voiture {
+width: 50vw;
+}
 
 .tireAR {
 position: absolute;
@@ -372,15 +375,6 @@ to{
 
 .tireAR {
 -webkit-animation: tireAR 1s linear infinite;
-}
-
-#myContainer {
-height: 16vw;
-
-}
-
-.voiture {
-width: 50vw;
 }
 
 
