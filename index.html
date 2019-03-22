@@ -12,8 +12,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-	<link href="categorie3.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<script src="script.js"></script>
 	<title>WildCars </title>
 </head>
 
@@ -55,7 +56,7 @@
 				</li>
 			</ul>
 		</div>
-	</nav> 
+	</nav>
 </header>
 
 <!-- Carousel -->
@@ -123,19 +124,16 @@
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row icon">
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_name2.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
+				<div class="col-sm-4 col-md-4 text-center">
+					<img src="medias/images/Icon_name2.png" class="img-fluid icon-img" alt="icon">
 					<div class="h5">5 years warranty</div>
 				</div>
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_SAV.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
+				<div class="col-sm-4 col-md-4 text-center">
+					<img src="medias/images/Icon_SAV.png" class="img-fluid icon-img" alt="icon">
 					<div class="h5">On-site repair</div>
 				</div>
-				<div class="col-12 col-md-4 text-center">
-					<img src="medias/images/Icon_name.png" class="img-fluid" alt="icon"
-					style="width:100px;height:100px;">
+				<div class="col-sm-4 col-md-4 text-center">
+					<img src="medias/images/Icon_name.png" class="img-fluid icon-img" alt="icon">
 					<div class="h5">Professional team</div>
 				</div>
 			</div>
@@ -148,27 +146,31 @@
 	<div class="container-fluid text-center">
 		<h1>Categorie</h1>
 		<div class="row">
-			<div class="col-sm col-md col-lg">
+			<div class="picture col-sm col-md col-lg">
 				<a href="categorie1.html"><img src="medias/images/Banniere_categorie1.jpg" class="img-fluid" alt="Responsive image"></a>
+				<div class="name_categorie1">SUV</div>
 			</div>
-			<div class="col-sm col-md col-lg">
+			<div class="picture col-sm col-md col-lg">
 				<a href="categorie2.html"><img src="medias/images/Banniere_categorie2.jpg" class="img-fluid" alt="Responsive image"></a>
+				<div class="name_categorie2">CONVERTIBLES</div>
 			</div>
-			<div class="col-sm col-md col-lg">
+			<div class="picture col-sm col-md col-lg">
 				<a href="categorie3.html"><img src="medias/images/Banniere_categorie3.jpg" class="img-fluid" alt="Responsive image"></a>
+				<div class="name_categorie3">MINIVANS</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm col-md col-lg">
+			<div class="picture col-sm col-md col-lg">
 				<a href="categorie4.html"><img src="medias/images/Banniere_categorie4.jpg" class="img-fluid" alt="Responsive image"></a>
+				<div class="name_categorie4">SEDANS</div>
 			</div>
-			<div class="col-sm col-md col-lg">
+			<div class="picture col-sm col-md col-lg">
 				<a href="categorie5.html"><img src="medias/images/Banniere_categorie5.jpg" class="img-fluid" alt="Responsive image"></a>
+				<div class="name_categorie5">MOTORCYCLES</div>
 			</div>
 		</div>
-	</div> 
+	</div>
 </section>
-<!-- il faut plus travailler -->
 
 <!-- About us + parallax -->
 <section>
@@ -180,46 +182,81 @@
 		<div class="col-sm col-md col-lg text-parallax">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-		
+
 	</div>
 </section>
 
 
-
-
-
-
-
+<!-- Top selling -->
 
 <section>
-
-</section>
-
-<!-- Top selling -->
-<section class="top-selling-section">
-	<div class="container text-center">
-			<h1 id="topselling">Top 3 selling</h1>
+	<div class="container">
+		<h1 id="topselling">Top selling</h1>
 		<div class="row">
-			<div class="col-sm col-md col-lg sell">
-				<div class="ribbon"><span>Top selling</span></div>
-				<img src="medias/images/5bmw.jpg" class="img-fluid" alt="Responsive image">
-				<h5 class="card-title card-selling">BMW Serie 3 320D</h5>
+			<div class="col-sm-12 col-md-12 col-lg">
+				<div class="card mb-3">
+					<div class="row">
+						<div class="col-sm col-md-8 col-lg">
+							<div class="card-body">
+								<h5 class="card-title text-center">BENTLEY CONTINENTAL</h5>
+								<ul class ="top-sell-list">
+									<li>Energy: Gasole</li>
+									<li>HP: 112 / 82 kW</li>
+									<li>Tax rating: 6</li>
+									<li>Fuel consumption combined: 61.5 mpg</li>
+									<li>Transmission: Manual</li>
+								</ul>
+								<h5 class="card-title text-center">PRICE: 164 000 €</h5>
+							</div>
+						</div>
+						<div class="col-sm col-md-4 col-lg align-self-center">
+							<div class="ribbon"><span>Top selling</span></div>
+							<img src="medias/images/2bentley.jpg" class="card-img" alt="...">
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-sm col-md col-lg sell">
-				<div class="ribbon"><span>Top selling</span></div>
-				<img src="medias/images/GLS2.jpg" class="img-fluid" alt="Responsive image">
-				<h5 class="card-title card-selling">Mercedes GLS</h5>
-			</div>
-			<div class="col-sm col-md col-lg sell">
-				<div class="ribbon"><span>Top selling</span></div>
-				<img src="medias/images/voiture_luxe4.jpg" class="img-fluid" alt="Responsive image">
-				<h5 class="card-title card-selling">Mercedes C220</h5>
+			<div class="col-sm-12 col-md-12 col-lg">
+				<div class="card mb-3">
+					<div class="row">
+						<div class="col-sm col-md-8 col-lg">
+							<div class="card-body">
+								<h5 class="card-title text-center">AUDI A3</h5>
+								<ul class ="top-sell-list">
+									<li>Energy: Gasole</li>
+									<li>HP: 138 / 100 kW</li>
+									<li>Tax rating: 5</li>
+									<li>Fuel consumption combined: 58.9 mpg</li>
+									<li>Transmission: Automatic</li>
+								</ul>
+								<h5 class="card-title text-center">PRICE: 19 900 €</h5>
+							</div>
+						</div>
+						<div class="col-sm col-md-4 col-lg align-self-center">
+							<div class="ribbon"><span>Top selling</span></div>
+							<img src="medias/images/voiture_middle2.jpg" class="card-img" alt="...">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 
+
 </section>
 
+<!-- Car moving with javascript -->
+
+<div id="myContainer">
+	<div class="col">
+		<div id="myAnimation" onclick="myMove()">
+			<img src="medias/images/voiture.png" class="voiture">
+				<img src="medias/images/pneu.png" class="tireAV">
+				<img src="medias/images/pneu.png" class="tireAR">
+
+		</div>
+	</div>
+</div>
 
 
 <!-- Our Team -->
@@ -281,6 +318,8 @@
 		</div>
 	</div>
 </section>
+
+
 
 <!--Footer -->
 <footer class="footer-distributed">
