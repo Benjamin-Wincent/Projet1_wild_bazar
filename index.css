@@ -239,12 +239,11 @@ h1.categorie-title {
   font-weight: 600;
 }
 
-
 h5.card-title.text-center {
   color: #ED3759;
   font-size: 1em;
   font-weight: 600;
-}
+ }
 
 .card-body {
 padding: 10px;
@@ -601,6 +600,11 @@ to{
 
   /*Icon*/
 
+  h5.card-title.text-center {
+    padding-bottom: 10px;
+ }
+
+
   .icon-img {
     width: 80px;
   }
@@ -620,5 +624,6 @@ to{
   a.nav-link {
     font-size: 1em;
   }
+
 
 }
