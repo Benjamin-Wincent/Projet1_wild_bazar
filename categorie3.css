@@ -605,6 +605,7 @@ border-top: 3px solid
 #myContainer {
 	width: 100%;
 	position: relative;
+	
 }
 
 #myAnimation {
@@ -617,12 +618,14 @@ border-top: 3px solid
 	position: absolute;
 	top: 51%;
 	right: 17.5%;
+	width: 7vw;
 }
 
 .tireAV {
 	position: absolute;
 	top: 51%;
 	right: 71.5%;
+	width: 7vw;
 }
 
 @-webkit-keyframes tireAV {
@@ -652,6 +655,11 @@ border-top: 3px solid
 } 
 
 #myContainer {
-	height: 150px;
-	border: 1px solid red;
+    height: 16vw;
+	border: 1px solid black;
+	
+}
+
+.voiture {
+	width: 50vw;
 }
