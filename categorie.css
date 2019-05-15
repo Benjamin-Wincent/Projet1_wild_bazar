@@ -1,34 +1,28 @@
-
-body
-{
+body {
 	font-family: 'Abel', sans-serif;
 }
 
 /*Navbar*/
-.row
-{
+
+.row {
 	margin: 40px 0;
 }
 
-.navbar-light .navbar-brand
-{
+.navbar-light .navbar-brand {
 	color: black;
 	font-size: 30px;
 }
 
-.navbar-light .navbar-brand:hover
-{
+.navbar-light .navbar-brand:hover {
 	color: #ED3759;
 	font-size: 30px;
 }
 
-.navbar-light .navbar-nav .nav-link
-{
+.navbar-light .navbar-nav .nav-link {
 	color: #33383b;
 }
 
-.navbar-light .navbar-nav .nav-link:hover
-{
+.navbar-light .navbar-nav .nav-link:hover {
 	color: #ED3759;
 }
 
@@ -49,14 +43,18 @@ body
 	color:#ED3759;
 }
 
-.banniere
-{
+a.nav-link {
+  font-size: 1.5em;
+}
+
+/*Banniere*/
+
+.banniere {
 	position: relative;
 	overflow: hidden;
 }
 
-.banniere-caption
-{
+.banniere-caption {
 	position: absolute;
 	text-shadow: 3px 3px 6px black;
 	color: white;
@@ -65,40 +63,33 @@ body
 	font-family: 'Noto Sans', sans-serif;
 }
 
-.img-fluid
-{
+.img-fluid {
 	transition: transform .5s;
 }
 
-.img-fluid:hover
-{
-	transform: scale(1.1);
+.img-fluid:hover {
+	transform: scale(1.05);
 }
 
-.card-body
-{
+.card-body {
 	padding: 10px;
 	background-color: #292c2f;
 	color:#DCDCDC;
 }
 
-.banniere-caption h5
-{
+.banniere-caption h5 {
 	font-size: 8vmin;
 }
 
-.banniere-caption p
-{
+.banniere-caption p {
 	font-size: 3.5vmin;
 }
 
-.row
-{
+.row {
 	margin: 15px 0;
 }
 
-.prix
-{
+.prix {
 	border-radius: 5px;
 	padding: 4px;
 	font-size: 1.1em;
@@ -111,78 +102,35 @@ body
 	transition: transform .2s;
 }
 
-.card img:hover
-{
+.card img:hover {
 	opacity: 0.7;
 }
 
-.card:hover .prix
-{
+.card:hover .prix {
 	transform: translate(5px, 5px);
 }
 
-@media screen and (max-width: 1024px)
-{
-	.card-title
-	{
-		font-size: 14px;
-		margin: 1px;
-	}
 
-	.card-body
-	{
-		padding: 2px;
-	}
+.icon-img {
+  width: 150px;
 }
 
-@media screen and (max-width: 815px)
-{
-	.card-title
-	{
-		font-size: 12px;
-		margin: 1px;
-	}
-
-	.card-body
-	{
-		padding: 2px;
-	}
-
-	.prix
-	{
-		font-size: 0.7em;
-	}
+.icon-list {
+  margin: 150px 0;
 }
 
-@media screen and (max-width: 576px)
-{
-	.card-title
-	{
-		font-size: 16px;
-		margin: 1px;
-	}
-
-	.card-body
-	{
-		padding: 5px;
-	}
-
-	.prix
-	{
-		font-size: 0.9em;
-	}
+div.h5 {
+  font-size: 1.8em;
 }
 
 /* Search button*/
 /*search box css start here*/
-.search-sec
-{
+.search-sec {
 	background: gray;
 	padding: 2rem;
 }
 
-.search-slt
-{
+.search-slt {
 	display: block;
 	width: 100%;
 	font-size: 0.875rem;
@@ -195,8 +143,7 @@ body
 	border-radius:0;
 }
 
-.wrn-btn
-{
+.wrn-btn {
 	width: 100%;
 	font-size: 16px;
 	font-weight: 400;
@@ -205,22 +152,19 @@ body
 	border-radius:0;
 }
 
-.search-sec
-{
+.search-sec {
 	background: white;
 	padding: 0;
 	margin-bottom: 0;
 }
 
-.btn-primary
-{
+.btn-primary {
 	color: #DCDCDC;
 	background-color: #292c2f;
 	border-color: #292c2f;
 }
 
-.btn-primary:hover
-{
+.btn-primary:hover {
 	opacity: 0.9;
 	color: white;
 	background-color: #ED3759;
@@ -228,8 +172,8 @@ body
 }
 
 /* CSS du footer */
-.footer-distributed
-{
+
+.footer-distributed {
 	background-color: #292c2f;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
@@ -239,54 +183,46 @@ body
 	padding: 55px 50px;
 }
 
-.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right
-{
+.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right {
 	display: inline-block;
 	vertical-align: top;
 }
 
 /* Footer left */
-.footer-distributed .footer-left
-{
+.footer-distributed .footer-left {
 	width: 40%;
 }
 
 /* The company logo */
-.footer-distributed h3
-{
+.footer-distributed h3 {
 	color:  #ffffff;
 	font: normal 36px 'Abel', cursive;
 	margin: 0;
 }
 
-.footer-distributed h3 span
-{
+.footer-distributed h3 span {
 	color:  #5383d3;
 }
 
 /* Footer links */
-.footer-distributed .footer-links
-{
+.footer-distributed .footer-links {
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
 
-.footer-distributed .footer-links a
-{
+.footer-distributed .footer-links a {
 	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color: white;
 }
 
-.footer-distributed .footer-links a:hover
-{
+.footer-distributed .footer-links a:hover {
 	color: #ED3759;
 }
 
-.footer-distributed .footer-company-name
-{
+.footer-distributed .footer-company-name {
 	color:  #8f9296;
 	font-size: 14px;
 	font-weight: normal;
@@ -294,13 +230,11 @@ body
 }
 
 /* Footer Center */
-.footer-distributed .footer-center
-{
+.footer-distributed .footer-center {
 	width: 35%;
 }
 
-.footer-distributed .footer-center i
-{
+.footer-distributed .footer-center i {
 	background-color:  #33383b;
 	color: #ffffff;
 	font-size: 25px;
@@ -313,44 +247,36 @@ body
 	vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope
-{
+.footer-distributed .footer-center i.fa-envelope {
 	font-size: 17px;
 	line-height: 38px;
 }
 
-.footer-distributed .footer-center p
-{
+.footer-distributed .footer-center p {
 	display: inline-block;
 	color: #ffffff;
 	vertical-align: middle;
 	margin:0;
 }
 
-.footer-distributed .footer-center p span
-{
+.footer-distributed .footer-center p span {
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
 
-.footer-distributed .footer-center p a
-{
+.footer-distributed .footer-center p a {
 	color:  #ED3759;
-	;
 	text-decoration: none;
-	;
 }
 
 /* Footer Right */
-.footer-distributed .footer-right
-{
+.footer-distributed .footer-right {
 	width: 20%;
 }
 
-.footer-distributed .footer-company-about
-{
+.footer-distributed .footer-company-about {
 	line-height: 20px;
 	color:  #92999f;
 	font-size: 14px;
@@ -358,21 +284,18 @@ body
 	margin: 0;
 }
 
-.footer-distributed .footer-company-about span
-{
+.footer-distributed .footer-company-about span {
 	display: block;
 	color:  #ffffff;
 	font-size: 16px;
 	margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons
-{
+.footer-distributed .footer-icons {
 	margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a
-{
+.footer-distributed .footer-icons a {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
@@ -388,61 +311,146 @@ body
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
-@media (max-width: 880px)
-{
-	.footer-distributed
-	{
+@media (max-width: 880px) {
+	.footer-distributed {
 		font: bold 14px sans-serif;
 	}
 
-	.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right
-	{
+	.footer-distributed .footer-left,.footer-distributed .footer-center,.footer-distributed .footer-right	{
 		display: block;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-distributed .footer-center i
-	{
+	.footer-distributed .footer-center i {
 		margin-left: 0;
 	}
 }
 
 /*Icon*/
-.container-fluid
-{
+.container-fluid {
 	padding-right: 0px;
 	padding-left: 0px;
 }
 
-.icon
-{
+.icon {
 	margin: 50px 0;
 }
 
-.icon-title
-{
+.icon-title {
 	margin-top: 30px;
 	font-family: 'Noto Sans', sans-serif;
 }
 
 /*Modal*/
-.addcart
-{
+
+.addcart {
 	color: white;
 	background-color: #ED3759;
 	border-color: #ED3759;
 }
 
-.addcart:hover
-{
+.addcart:hover {
 	opacity: 0.7;
 }
 
-.contactus
-{
+.contactus {
 	color: #DCDCDC;
 	background-color: #ED3759;
 	border-color: #ED3759;
+}
+
+
+/* responsivité */
+
+@media screen and (max-width: 1024px) {
+	.card-title {
+		font-size: 14px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 2px;
+	}
+}
+
+@media screen and (max-width: 815px) {
+	.card-title {
+		font-size: 12px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 2px;
+	}
+
+	.prix	{
+		font-size: 0.7em;
+	}
+
+
+  .icon-img {
+  width: 100px;
+}
+
+.icon-list {
+  margin: 100px 0;
+}
+
+div.h5 {
+  font-size: 1.2em;
+}
+}
+
+@media screen and (max-width: 576px) {
+	.card-title	{
+		font-size: 16px;
+		margin: 1px;
+	}
+
+	.card-body {
+		padding: 5px;
+	}
+
+	.prix	{
+		font-size: 0.9em;
+	}
+
+	  /*Icon*/
+
+	.icon {
+		margin: 0;
+	}
+
+	.icon-img {
+	  width: 80px;
+	}
+
+	.icon-list {
+	  margin: 55px 0;
+	}
+
+	div.h5 {
+	  font-size: 1em;
+	}
+
+	div.col-12.col-md-4.text-center {
+	  padding-top: 25px;
+	}
+
+	a.nav-link {
+	  font-size: 1em;
+	}
+
+	div.h1.icon-title.text-center {
+		font-size: 1em;
+		font-weight: 600;
+	}
+
+	div.col-sm-4.col-md-4.text-center {
+		padding-top: 25px;
+	}
+
+
 }
